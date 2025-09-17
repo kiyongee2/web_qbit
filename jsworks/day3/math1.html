@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/math1.js"></script>
+</head>
+<body>
+  <button onclick="throwDice()">주사위</button>
+  <p id="show"></p>
+
+  <script>
+    function throwDice(){
+      let dice = Math.floor(Math.random()*6) + 1;
+      document.querySelector("#show").innerHTML = dice;
+    }
+  </script>
+</body>
+</html>

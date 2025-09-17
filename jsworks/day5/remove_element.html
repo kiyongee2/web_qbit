@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <!-- this.onclick='' -> 클릭했을때 한 번만 삭제 -->
+  <button onclick="myFunction(); this.onclick=''">삭제</button>
+
+  <script>
+    function myFunction(){
+      let list = document.getElementById("myList");
+      // list.removeChild(list.lastElementChild);  //마지막 요소
+      // list.removeChild(list.firstElementChild); //첫번째 요소
+      list.removeChild(list.children[1]); //1번 인덱스 삭제
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기상청 날씨 API</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>오늘의 날씨</h1>
+  <h3 class="result">
+    <!-- 20240124, 0600, -10 -->
+  </h3>
+
+  <script>
+    let date = new Date();
+    console.log(date);
+    let year = date.getFullYear();
+    let month = '0' + date.getMonth() + 1; //012
+    month = month.substring(1);
+    let day = '0' + date.getDate();
+    day = day.substring(1);
+    
+    let initDate = year + month + day;
+    console.log(initDate);
+    $.ajax({
+      type: "GET",
+      url: 'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=Ekmt%2F9o9LH7HCquGXEIc3o%2BqAAtZfnTGEYWIfUhvcoCyVWLiJLAWujWkNctV06dlz5c0oaKZ1rft2llpEDl%2BTw%3D%3D&pageNo=1&numOfRows=1000&dataType=json&base_date='+ initDate + '&base_time=0600&nx=55&ny=127',
+      success: function(data){
+        console.log(data);
+        console.log(data.response.body.items.item[3].obsrValue);
+
+        let item = data.response.body.items.item[3];
+        let content = "날짜: " + item.baseDate + 
+          ', ' + 
+          "발표시각: " + item.baseTime + 
+          ', ' + 
+          "기온: " + item.obsrValue;
+        $('.result').text(content);
+      },
+      error: function(error){
+        console.log(error);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+<script>
+	const car = {
+		"brand": "소나타",
+		"year": 2020,
+		"color": "white"
+	}
+	
+	console.log(car.brand);
+</script>
+</head>
+<body>
+	<h2>자동차 정보</h2>
+    <p id="info"></p>
+
+    <script>
+        // HTML에 표시
+        document.getElementById("info").innerHTML =
+            `브랜드: ${car.brand}, 배기량: ${car.cc}cc, 색상: ${car.color}`;
+    </script>
+</body>
+</html>

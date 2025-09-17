@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기상청 날씨 API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>기상청 날씨 예보</h1>
+    <form action="">
+      <label for="datepick">날짜 선택</label>
+      <input type="date" id="datepick">
+      <button>조회</button>
+    </form>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>날짜</th>
+          <th>시간</th>
+          <th>온도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">조회 내용이 없습니다.</td>
+        </tr>
+        <!-- <tr>
+          <td>20230118</td>
+          <td>0600</td>
+          <td>-10</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+  
+  <script>
+    let date = new Date();
+    console.log(date);
+    let year = date.getFullYear();
+    let month = '0' + date.getMonth() + 1; //012
+    month = month.substr(-2);
+    let day = '0' + date.getDate();
+    day = day.substr(-2);
+    
+    let initDate = year + month + day;
+    console.log(initDate);
+    $.ajax({
+      url: `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=Ekmt%2F9o9LH7HCquGXEIc3o%2BqAAtZfnTGEYWIfUhvcoCyVWLiJLAWujWkNctV06dlz5c0oaKZ1rft2llpEDl%2BTw%3D%3D&pageNo=1&numOfRows=1000&dataType=json&base_date=${initDate}&base_time=0600&nx=55&ny=127`,
+      success: function(response){
+        
+      }
+    });
+  </script>
+</body>
+</html>

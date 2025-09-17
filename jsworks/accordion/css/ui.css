@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* common 영역 */
+*{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a{color: #909090; text-decoration: none;}
+
+/* content 영역 */
+#content{width: 1000px; margin: 30px auto;}
+#content h3{padding: 20px;}
+.accordion_box ol li{border-top: 4px solid salmon}
+/* 불릿 버튼 클릭 */
+.accordion_box ol li h4{ margin :20px 30px; cursor:pointer; 
+  background: url(../images/bullet_down.png) no-repeat right}
+.accordion_box ol li.on h4{background:url(../images/bullet_up.png) no-repeat right;}
+.accordion_box ol li h4 span{margin-right: 10px; font-weight: 900}
+
+/* p 태그 내용 숨기기/보이기 */
+.accordion_box ol li p{visibility: hidden; line-height: 2;}
+.accordion_box ol li.on p{padding: 30px 100px; background: #eee; 
+  visibility: visible;}
+

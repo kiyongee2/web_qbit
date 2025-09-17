@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery-3.7.1.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        //li 요소에 일치하는 내용을 각각 실행함
+        $("li").each(function(index, element){
+          alert(index + ": " + $(this).text());
+          console.log(index + ": " + $(this).text());
+        })
+      })
+    })
+  </script>
+</head>
+<body>
+  <button>알림창 실행</button>
+
+  <ul>
+    <li>Milk</li>
+    <li>Tea</li>
+    <li>Coffee</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+div{
+    width: 600px;   /* 너비 */
+    height: 600px;  /* 높이 */
+    border: 1px solid #aaa;   /*테두리*/
+    background: url("../images/cosmos.jpg") no-repeat;
+    margin-bottom: 20px;
+}
+.bg1{
+    /* 속성값: auto - 원본사이즈 */
+    background-size: auto;
+}
+.bg2{
+    background-size: 200px;
+}
+.bg3{
+    /* 박스 너비의 80% - 480px */
+    background-size: 80%;
+    background-position: bottom right;
+}
+.bg4{
+    /* 이미지가 축소되어 비율대로 보임 */
+    background-size: contain;
+}
+.bg5{
+    /* 이미지를 박스크기만큼 꽉 채우고 나머지는 잘림 */
+    background-size: cover;
+}
+

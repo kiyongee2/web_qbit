@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>목록 관련 스타일</title>
+        <style>
+            /* css, html 스타일이 겹치면 css 우선임 */
+            /* 스타일 상속 : 부모의 스타일을 자식이 상속받음 */
+            ul li{ 
+                /*list-style: none;*/
+                list-style: square;
+                line-height: 2;
+            } 
+            ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            ol li{
+                list-style: lower-alpha; 
+            }
+            ol li a{
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>ABC 주식회사</h2>
+        <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">제품 소개</a></li>
+            <li><a href="#">회원 가입</a></li>
+            <li><a href="#">게시판</a></li>
+        </ul>
+
+        <h2>123 주식회사</h2>
+        <ol>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">제품 소개</a></li>
+            <li><a href="#">회원 가입</a></li>
+            <li><a href="#">게시판</a></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+  </ul>
+  <!-- this.onclick='' -> 클릭했을때 한 번만 생성 -->
+  <button onclick="myFunction(); this.onclick=''">추가</button>
+
+  <script>
+    function myFunction(){
+      let li = document.createElement("li");  //li 태그 생성
+      let text = document.createTextNode("Water");  //내용 생성
+      li.appendChild(text);  //li태그에 내용 붙이기
+
+      let ul = document.getElementById("myList");
+      ul.appendChild(li);  //ul 태그에 li 태그 붙이기
+    }
+  </script>
+</body>
+</html>

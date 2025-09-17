@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="welcome()">클릭</button>
+  <div>
+    <img src="images/cup-1.png" alt="cup" onclick="changePic()" id="pic">
+  </div>
+  
+  <script>
+    function welcome(){
+      setTimeout(function(){
+        alert("환영합니다.")
+      }, 1000);
+    }
+
+    function changePic(){
+      let img = document.getElementById("pic");
+
+      setTimeout(function(){
+        img.src = "images/cup-2.png";
+      }, 1000);
+    }
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{margin-bottom: 5px;}
+    img{display: none;}
+  </style>
+</head>
+<body>
+  <button onclick="showHide()" id="btn">보이기</button>
+  <div>
+    <img src="images/flower.jpg" alt="꽃" id="pic">
+  </div>
+  
+  <script>
+    //토글 방식
+    let sw = true;  //전역 변수
+
+    function showHide(){
+      let pic = document.getElementById('pic');
+      let btn = document.getElementById('btn');
+      if(sw){
+          pic.style.display = "block";
+          btn.innerText = "숨기기";
+          sw = false;
+      }
+      else{
+          pic.style.display = "none";
+          btn.innerText = "보이기";
+          sw = true;
+      }
+    }
+  </script>
+</body>
+</html>

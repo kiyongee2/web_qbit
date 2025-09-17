@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    let names = ['luna', 'linda', 'jerry', 'john'];
+
+    //map은 반드시 array를 리턴함
+    let data = names.map((item) => {
+      return item;
+    });
+    console.log(data);
+    */
+
+    let ceoList = [
+      {name: "Larry Page", age: 33, ceo: true},
+      {name: "Bill Gates", age: 53, ceo: true},
+      {name: "Elsa", age: 23, ceo: false}
+    ]
+
+    let data = ceoList.map((item) => {
+      return item.name;
+    })
+    console.log(data);
+
+    let data2 = ceoList.filter((item) => {
+      return item.age > 30;
+    })
+    console.log(data2);
+  </script>
+</body>
+</html>

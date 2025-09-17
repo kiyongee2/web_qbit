@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON Example</title>
+<script>
+    //JSON 형태의 데이터를 자바스크립트 객체로 선언
+	const car = {
+		"brand": "소나타",
+		"year": 2020,
+		"color": "white"
+	}
+	
+	//출력
+	console.log(car.brand);
+	console.log(car.year);
+	console.log(car.color);
+</script>
+</head>
+<body>
+	<h2>자동차 정보</h2>
+    <p id="info"></p>
+    
+    <script>
+    	document.getElementById("info").innerHTML = 
+    		`브랜드: ${car.brand}, 제조연도: ${car.year}, 색상: ${car.color}`
+    </script>
+</body>
+</html>

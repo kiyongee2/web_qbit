@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제이쿼리</title>
+  <script src="js/jquery-3.7.1.js"></script>
+  <link rel="stylesheet" href="css/scroll.css">
+</head>
+<body>
+  <div id="wrap"></div>
+  <div id="up">
+    <a href="#">TOP</a>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function() {
+          //scrollTop()-y좌표 확인
+          console.log($(this).scrollTop());
+          
+          if($(this).scrollTop() > 100){
+              $("#up").addClass("on");    //on 클래스 생성               
+          }else{
+              $("#up").removeClass("on"); //on 클래스 삭제              
+          }
+
+          $("#up a").click(function() {
+              $(window).scrollTop(0);  //scrollTop()값을 0으로 설정             
+          });
+      });
+    });
+  </script>
+</body>
+</html>

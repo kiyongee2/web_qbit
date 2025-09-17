@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery-3.7.1.js"></script>
+  <style>
+    .wrap ul li{margin: 10px}
+    .wrap a{text-decoration: none; color: #555}
+    .wrap .ul1, .ul2{display: none;}
+  </style>
+  <script>
+    $(function(){
+        $('.btn1 a').on('mouseover', function(){
+            //a 태그의 부모(p)의 다음 형제요소(ul)
+            $(this).parent().next().show();   
+            $('.ul2').css('display', 'none');
+        })
+        $('.btn2 a').on('mouseover', function(){
+            $(this).parent().next().show();
+            $('.ul1').css('display', 'none');
+        })
+    })
+</script>
+</head>
+<body>
+  <div class="wrap">
+    <p class="btn1">
+      <a href="#">학교안내</a></p>
+    <ul class="ul1">
+        <li><a href="#">학교장인사말</a></li>
+        <li><a href="#">학교연혁</a></li>
+        <li><a href="#">찾아오시는길</a></li>
+    </ul>
+    <p class="btn2"><a href="#">학교생활</a></p>
+    <ul class="ul2">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">가정통신문</a></li>
+        <li><a href="#">동아리활동</a></li>
+    </ul>
+  </div>
+</body>
+</html>

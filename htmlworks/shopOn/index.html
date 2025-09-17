@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopOn 쇼핑몰입니다.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/187dabceeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- header -->
+  <header class="active">
+    <div class="container">
+      <h1>
+        <a href="./index.html">shopOn</a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main id="main">
+    <div class="container">
+      <h4>Welcome~</h4>
+      <h2>shopOn 쇼핑몰</h2>
+      <p>착한 가격과 좋은 상품을 만나보세요</p>
+      <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </main>
+
+  <!-- product -->
+  <section id="product">
+    <div class="container">
+      <div class="title">
+        <h4>상품 목록</h4>
+        <H2>Products</H2>
+      </div>
+      <div class="product-me">
+        <div class="product-inner">
+          <img src="./images/strawberries.jpg" alt="딸기">
+          <strong>딸기</strong>
+          <h3>10,000원</h3>
+        </div>
+        <div class="product-inner">
+          <img src="./images/grapes.jpg" alt="포도">
+          <strong>포도</strong>
+          <h3>8,000원</h3>
+        </div>
+        <div class="product-inner">
+          <img src="./images/melon.jpg" alt="참외">
+          <strong>참외</strong>
+          <h3>5,000원</h3>
+        </div>
+        <div class="product-inner">
+          <img src="./images/watermelon.jpg" alt="수박">
+          <strong>수박</strong>
+          <h3>20,000원</h3>
+        </div>
+        <div class="product-inner">
+          <img src="./images/bananas.jpg" alt="바나나">
+          <strong>바나나</strong>
+          <h3>3,000원</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact me -->
+   <section id="contact">
+    <div class="container">
+      <div class="title">
+        <h4>CONTACT</h4>
+        <H2>Contact Me</H2>
+      </div>
+      <div class="contact-me">
+        <div class="left">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <h3>phone</h3>
+              <p>010-1234-5678</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <h3>email</h3>
+              <p>today@time.com</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <div class="info-text">
+              <h3>address</h3>
+              <p>서울시 마포구 숭문 4길</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">name</label>
+              <input type="text" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="text" id="email">
+            </div>
+            <div class="form-group">
+              <label for="memo">memo</label>
+              <textarea id="memo"></textarea>
+            </div>
+            <button>send</button>
+          </form>
+        </div>
+      </div>
+      </div>
+   </section>
+</body>
+</html>

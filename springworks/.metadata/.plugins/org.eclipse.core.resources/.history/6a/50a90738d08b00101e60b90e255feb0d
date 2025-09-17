@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home..</title>
+</head>
+<body>
+	<h2>ajax 활용</h2>
+	<a href="/ajax-ex-01">01_get 요청하기</a>
+	<a href="/ajax-ex-02">00_post 요청하기</a>
+	<a href="/ajax-ex-03">03_get 요청 & parameter 전달하기</a>
+	<a href="/ajax-ex-04">04_post 요청 & parameter 전달하기</a>
+</body>
+</html>

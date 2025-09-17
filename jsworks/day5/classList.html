@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .myStyle {
+      background-color: coral;
+      padding: 16px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>classList 속성</h1>
+
+  <button onclick="classAdd()">Add</button>
+  <button onclick="classRemove()">Remove</button>
+  <button onclick="classToggle()">Toggle</button>
+
+  <div id="myDIV">
+    <p>오늘도 좋은 하루되세요~</p>
+  </div>
+
+  <script>
+    function classAdd() {
+      const list = document.getElementById("myDIV").classList;
+      list.add("myStyle");
+    }
+    function classRemove() {
+      const list = document.getElementById("myDIV").classList;
+      list.remove("myStyle");
+    }
+    function classToggle() {
+      const list = document.getElementById("myDIV").classList;
+      list.toggle("myStyle");
+    }
+  </script>
+</body>
+</html>

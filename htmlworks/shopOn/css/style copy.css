@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* 공통 스타일 */
+*{margin: 0; padding: 0;}
+#container{
+  width: 100%;
+  margin: 0 auto;
+}
+header{
+  height: 80px;
+  background: beige;
+}
+header #logo{
+  width: 20%;
+  height: 80px;
+  float: left;
+  line-height: 80px;
+  padding-left: 50px;
+}
+header #logo h1 a{color: orange; text-decoration: none;}
+header #logo h1 a:hover{color: rgb(211, 3, 3);}
+header nav{
+  width: 70%;
+  height: 80px;
+  float: right;
+  line-height: 80px;
+}
+header nav ul{padding-left: 200px;}
+header nav ul li{
+  list-style: none;
+  float: left;
+}
+header ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 0 30px;
+  color: black;
+}
+header ul li a:hover{
+  background-color: rgb(148, 181, 1);
+  color: white;
+}
+
+#container #main{
+  width: 80%;
+  margin: 0 auto;
+}
+#main #contents{width: 80%; margin: 40px auto;}
+#main #contents h1{margin: 20px; text-align: center;}
+
+/* footer 스타일 */
+footer{height: 80px; border-top: 2px solid #222;}
+#footer-menu{list-style: none; margin: 10px 40px;}
+#footer-menu li{display: inline-block; margin: 10px 0;
+  padding: 0 10px; border-right: 1px solid #ccc;}
+#footer-menu li a{text-decoration: none; color: #444;}
+#footer-menu li:last-child{border: none;}
+
+/* index 스타일 */
+#main #contents .main_pic{
+  width: 500px; 
+  margin: 0 auto;
+}
+#main #contents img{
+  width: 500px;
+  height: 460px;
+  border-radius: 5px;
+}
+
+/* product 스타일 */
+#main #contents .product{text-align: left;}
+#main #contents #watermelon, #strawberry{
+  height: 350px;
+}
+#main #contents #watermelon img, #contents #strawberry img{
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-right: 16px;
+}
+#main #contents p{
+  text-align: justify;
+  line-height: 2;
+}
+
+/* board 스타일 */
+#main #contents table{
+  width: 90%;
+  border: 2px solid #ccc;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+#main #contents table th, td{
+  border: 1px dotted #ccc;
+  height: 40px;
+  text-align: center;
+}
+#main #contents table thead{
+  background-color: #eee;
+}
+
+/* login 스타일 */
+#main #contents form{
+  width: 440px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  margin-bottom: 200px;
+}
+#main #contents form ul{padding: 20px 40px;}
+#main #contents form ul li{
+  list-style: none;
+  margin: 20px;
+  /* line-height: 3; */
+}
+#main #contents form label{
+  width: 80px;
+  float: left;
+}
+#main #contents form input[type='text'], input[type='password']{width: 200px; height: 25px;}
+#main #contents form input[type='submit'], input[type='reset']{padding: 5px 10px;}
+#main #contents form ul li:nth-of-type(3){margin-top: 30px;}

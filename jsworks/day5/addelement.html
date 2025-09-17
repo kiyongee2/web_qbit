@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrap">
+    <h2>카누 미니 아메리카노</h2>
+    <a href="#" onclick="addElements(); this.onclick='' ">더보기</a>
+    <div id="info"></div>
+  </div>
+
+  <script>
+    function addElements(){
+      let p = document.createElement("p");
+      let text = document.createTextNode("산뜻한 과일향의 마일드 로스트");
+      p.appendChild(text);
+
+      let img = document.createElement("img"); //img 태그 생성
+      let src = document.createAttribute("src"); //src 속성 생성
+      let alt = document.createAttribute("alt"); //alt 속성 생성
+      src.value = "images/kanu.jpg"; //src 속성값 생성
+      alt.value = "카누 커피";         //alt 속성값 생성
+      img.setAttributeNode(src);  
+      img.setAttributeNode(alt);
+
+      let div = document.getElementById("info");
+      div.appendChild(p);
+      div.appendChild(img);
+    }
+  </script>
+</body>
+</html>
