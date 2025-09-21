@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //자료형 변환
+    let numString = "123";
+    let convertedNumber = Number(numString); //문자열 -> 숫자
+    console.log(numString, convertedNumber);
+    
+    let strNumber = 456;
+    let convertedString = String(strNumber); //숫자 -> 문자열
+    console.log(convertedString, "Type:", typeof convertedString);
+
+    let age = prompt("나이를 입력하세요:");
+    console.log(age, "Type:", typeof age); //string
+    let numericAge = parseInt(age);
+    console.log(numericAge, "Type:", typeof numericAge); //number 
+
+  </script>
+</body>
+</html>

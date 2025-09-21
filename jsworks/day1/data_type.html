@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //자료형 (Data Type)
+    //1. 숫자형 (Number)  
+    let age = 26; //정수형 (Integer)
+    let temperature = 24.5; //실수형 (Float)  
+    console.log("Age:", age);
+    console.log("Temperature:", temperature);
+
+    //2. 문자열형 (String)
+    let name = "이정후"; //큰따옴표 사용
+    let city = 'Seoul'; //작은따옴표 사용
+    console.log("Name:", name);
+    console.log("City:", city);   
+
+    //3. 불린형 (Boolean)
+    let isStudent = false; //true, false
+    let hasLicense = true;  
+    console.log("Is Student:", isStudent);
+    console.log("Has License:", hasLicense);
+
+    //4. null과 undefined
+    let emptyValue = null; //값이 없음
+    let notAssigned; //값이 할당되지 않음
+    console.log("Empty Value:", emptyValue);
+    console.log("Not Assigned:", notAssigned);
+    
+    //4. 배열형 (Array)
+    let fruits = ["Apple", "Banana", "Cherry"];
+    console.log("Fruits Array:", fruits);
+    console.log("First Fruit:", fruits[0]);
+    console.log("Number of Fruits:", fruits.length);
+
+    //5. 객체형 (Object)
+    let person = {
+      name: "이정후",
+      age: 26,
+      isStudent: false
+    };
+    console.log("Person Object:", person);
+    console.log("Person Name:", person.name);
+    console.log("Person Age:", person.age);
+
+    //자료형 확인
+    console.log("Type of age:", typeof age); //number
+    console.log("Type of name:", typeof name); //string
+    console.log("Type of isStudent:", typeof isStudent); //boolean
+    console.log("Type of emptyValue:", typeof emptyValue); //object (null은 object
+    console.log("Type of notAssigned:", typeof notAssigned); //undefined
+    console.log("Type of person:", typeof person); //object
+    console.log("Type of fruits:", typeof fruits); //object (배열도 객체의
+    console.log("Is fruits an Array?", Array.isArray(fruits)); //true
+    
+  </script>
+</body>
+</html>

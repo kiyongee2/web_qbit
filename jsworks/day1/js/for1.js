@@ -25,6 +25,7 @@ while(true){
   }else{
     dan = parseInt(dan);
     document.write(dan + "단<br>")
+    document.write
     for(var i=1; i<=9; i++){
       //console.log(dan + "x" + i + "=" + (dan*i));
       document.write(dan + "x" + i + "=" + (dan*i) + '<br>');

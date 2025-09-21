@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+    #container {
+      width: 960px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 15px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    td:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.05);
+    }
+    td.booked {
+      background-color: #ffccbc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>자리 배치도</h1>
+    <div id="seat-area"></div>
+  </div>
+
+  <script>
+    let customer = prompt("입장객 수를 입력하세요:");
+    let colNum = prompt("좌석열(한 줄 좌석 수)을 입력하세요:");
+    let rowNum;
+
+    customer = parseInt(customer);
+    colNum = parseInt(colNum);
+
+    if (isNaN(customer) || isNaN(colNum) || customer <= 0 || colNum <= 0) {
+      document.getElementById("seat-area").innerHTML = "<p>올바른 숫자를 입력하세요.</p>";
+    } else {
+      // 줄 수 계산
+      rowNum = Math.ceil(customer / colNum);
+
+      // 테이블 생성
+      let table = document.createElement("table");
+
+      for (let i = 0; i < rowNum; i++) {
+        let tr = document.createElement("tr");
+        for (let j = 1; j <= colNum; j++) {
+          let seat = i * colNum + j;
+          if (seat > customer) break;
+
+          let td = document.createElement("td");
+          td.textContent = "좌석 " + seat;
+
+          // 좌석 클릭 시 예약 표시
+          td.addEventListener("click", function () {
+            if (!td.classList.contains("booked")) {
+              td.classList.add("booked");
+              td.textContent = "예약됨";
+            } else {
+              alert("이미 예약된 좌석입니다.");
+            }
+          });
+
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+
+      document.getElementById("seat-area").appendChild(table);
+    }
+  </script>
+</body>
+</html>
