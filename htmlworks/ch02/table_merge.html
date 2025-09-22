@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀 합치기</title>
+  <style>
+    table{
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+    td{
+      border: 1px solid #ccc;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 열(column) 병합 : colpan -->
+  <table>
+    <tr>
+      <td>1행1열</td>
+      <td>1행2열</td>
+      <td>1행3열</td>
+    </tr>
+    <tr>
+      <td colspan="3">비고</td>
+    </tr>
+  </table>
+  <br><br>
+  <!-- 행(row) 병합 : rowspan -->
+  <table>
+    <tr>
+      <td>1행1열</td>
+      <td>1행2열</td>
+      <td rowspan="2">비고</td>
+    </tr>
+    <tr>
+      <td>2행1열</td>
+      <td>2행2열</td>
+    </tr>
+  </table>
+</body>
+</html>

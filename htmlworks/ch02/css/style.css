@@ -1,16 +1,18 @@
-h1{color: #990101}
-h2{font-family: "궁서";}
-p{
-    font-family: "바탕";
-    line-height: 2;
+h1{color: green}
+h2{
+    font-family: "궁서";
+    color: #0000ff;
 }
-span{
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
+p{
+    /* 줄간격 2 - 간격이 글자 크기의 100% */
+    line-height: 2;
 }
 a{
     font-size: 20px;
     text-decoration: none; /* 밑줄 없애기 */
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
+a:hover{
+    color: orange;
+}
+

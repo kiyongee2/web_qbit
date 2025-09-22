@@ -18,28 +18,32 @@ public class Main {
 			System.out.println("================================================");
 			System.out.print("선택> ");
 			
-			int choice = Integer.parseInt(scan.nextLine());
-			
-			switch(choice) {
-			case 1:
-				createAccount();
-				break;
-			case 2:
-				deposit();
-				break;
-			case 3:
-				withdraw();
-				break;
-			case 4:
-				selectAccount();
-				break;
-			case 5:
-				System.out.println("프로그램을 종료합니다.");
-				run = false;
-				break;
-			default:
-				System.out.println("지원되지 않는 기능입니다.");
-				break;
+			try {
+				int choice = Integer.parseInt(scan.nextLine());
+				
+				switch(choice) {
+				case 1:
+					createAccount();
+					break;
+				case 2:
+					deposit();
+					break;
+				case 3:
+					withdraw();
+					break;
+				case 4:
+					selectAccount();
+					break;
+				case 5:
+					System.out.println("프로그램을 종료합니다.");
+					run = false;
+					break;
+				default:
+					System.out.println("지원되지 않는 기능입니다.");
+					break;
+				}
+			}catch(NumberFormatException e) {
+				System.out.println("유효한 숫자를 입력하세요.");
 			}
 		}
 	} //main() 함수
