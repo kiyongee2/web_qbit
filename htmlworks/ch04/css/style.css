@@ -1,12 +1,14 @@
 /* 상단 메뉴 만들기 */
-body{margin: 0;}
+body{margin: 0;}/* body의 기본 margin 제거 */
 nav ul{
     list-style: none; 
-    margin: 0;
+    margin: 0; /* ul의 기본 margin 제거 */
+    padding: 0; /* ul의 기본 padding 제거 */
+    text-align: center;
 }
 nav ul li{
-    display: inline-block;
-    margin: 16px;
+    display: inline-block; /* li를 가로로 나열 */
+    margin: 16px; /* li 사이의 간격 */
     border-top: 3px solid #222;
     padding: 10px;
 }
@@ -15,7 +17,16 @@ nav ul li a{
    color: #000;
    padding: 10px;
 }
-nav ul li:hover{background-color: #eee;}
+nav ul li:hover{
+    /* 마우스 오버 시 변경 */
+    background-color: #eee;
+    border-top: 3px solid #f00; 
+}
 
-section h1{margin-left: 20px;}
+/* section 스타일 */
+section{margin: 20px;}
+section h1{
+    padding: 20px;
+    border-bottom: 3px solid #222;
+}
 

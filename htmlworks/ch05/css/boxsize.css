@@ -2,14 +2,14 @@
 *{
   margin: 0; 
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 #container{
   width: 1000px;
   margin: 0 auto;
 }
 header{
-  /* width는 container 같으면 생략 가능함 */
+  /* width는 container와 같으면 생략 가능함 */
   /* width: 1000px; */
   height: 100px;
   border: 1px solid #ccc;
@@ -20,6 +20,7 @@ section{
   height: 600px;
   border: 1px solid #ccc;
   padding: 10px;
+  background-color: beige;
   float: left;
 }
 aside{
@@ -27,11 +28,12 @@ aside{
   height: 600px;
   border: 1px solid #ccc;
   padding: 10px;
+  background-color: aliceblue;
   float: right;
 }
 footer{
-  clear: both;
   height: 100px;
   border: 1px solid #ccc;
   padding: 10px;
+  clear: both;
 }

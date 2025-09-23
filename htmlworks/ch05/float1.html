@@ -8,22 +8,18 @@
         div{
             padding: 10px;
             margin: 10px;
-            float: left;
+            float: left; /* 모든 박스에 float 적용 */
+            /*width: 100px; /* 박스 크기 지정 */
+            /*display: inline-block; /* float 대신 inline-block 사용 */
         }
         .box1{
             background: #f0f;
             /* box1의 위치 left가 되고 다음 개체는 그 옆에 위치함 */
+            /* float: left;  */
         }
-        .box2{
-            background: #0f0;
-        }
-        .box3{
-            background: #ff0;
-        }
-        .box4{
-            background: #0ff;
-            float: right;
-        }
+        .box2{background: #0f0;}
+        .box3{background: #ff0;}
+        .box4{background: #0ff;}
     </style>
 </head>
 <body>
