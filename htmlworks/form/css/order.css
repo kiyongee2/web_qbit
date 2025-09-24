@@ -1,3 +1,5 @@
+/* form/order.css */
+
 #container{
     width: 960px;
     margin: 20px auto;
@@ -5,9 +7,16 @@
 h2{text-align: center;}
 form{
     width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; /* 수평 가운데 정렬 */
 }
-fieldset{margin-bottom: 16px;}
+fieldset{
+    margin-bottom: 16px;
+    padding: 16px; /* 안쪽 여백 */
+}
+legend{
+    font-weight: bold;
+    font-size: 1.2em;
+}
 ul li{
     list-style: none;
     margin: 16px;
@@ -16,9 +25,10 @@ ul li label{
     width: 120px;
     float: left;
 }
-ul li label.size{width: 140px;}
 textarea{resize: none;}
 input[type='submit'], input[type='reset']{
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 8px 16px;
+    margin-right: 8px;
 }
+

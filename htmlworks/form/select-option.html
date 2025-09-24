@@ -32,8 +32,8 @@
         <form action="process.jsp" method="post">
             <fieldset>
                 <legend>수강 신청</legend>
-                <!-- autofocus 속성 :  페이지 커서 위치 지정 
-                     required : 필수 입력 제한 -->
+                <!-- value: 입력상자에 표시될 값 
+                     readonly: 읽기 전용 -->
                 <ul>
                     <li>
                         <label for="cid">학과번호</label>
@@ -43,7 +43,7 @@
                     <li>
                         <label for="sname">이름</label>
                         <input type="text" id="sname" name="sname"
-                               required>
+                               value="홍길동" readonly>
                     </li>
                     <li>
                         <label for="major">학과</label>
