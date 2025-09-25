@@ -14,7 +14,6 @@ header nav{
   height: 60px; 
   background-color: black;
 }
-nav #main-nav{text-align: center;}
 nav #main-nav li{
   display: inline-block; 
   line-height: 60px;
@@ -30,7 +29,7 @@ nav #main-nav li{
   height: 260px;
 }
 
-/* section 영역 */
+/* section 공통 */
 section{
   height: 320px; 
   padding: 10px 5%;
@@ -41,6 +40,8 @@ section:nth-of-type(2n){
 section .page-title{margin: 20px 0;}
 section p{line-height: 2.5;}
 section .content .photo{display: none;}
+
+/* choice */
 #choice .content h2{
   margin-bottom: 20px; 
   font-style: italic; 
@@ -52,21 +53,21 @@ section .content .photo{display: none;}
 /* footer 영역 */
 footer{
   height: 80px; 
-  border-top: 2px 
-  solid #222;
+  border-top: 2px solid #222;
   background-color: #f4f4f4;
-  text-align: center;
 }
 #bottom-menu{
   list-style: none; 
   margin: 10px 20px;
+  text-align: center;
 }
 #bottom-menu li{
   display: inline-block; 
   padding: 0 10px;
   border-right: 2px solid #ccc;
 }
-#bottom-menu li:last-child{border: none;}  /* 사이트맵 우측의 바 숨기기 */
+/* 사이트맵 우측의 바 숨기기 */
+#bottom-menu li:last-child{border: none;}  
 #bottom-menu li a{
   text-decoration: none; 
   color: #444; 
