@@ -22,19 +22,19 @@ footer{height: 100px; color: #fff; padding: 10px;}
 }
 
 /* pc 기준 */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   #container{
     width: 1024px; 
     margin: 0 auto;
     background-color: #00f
   }
-}
+} */
 
 /* 와이드 모니터 기준 */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   #container{
     width: 1200px; 
     margin: 0 auto;
     background-color: #ff0;
   }
-}
+} */

@@ -1,0 +1,17 @@
+/* event.css */
+#item{
+  width: 500px; 
+  margin: 0 auto; 
+  position: relative; /* 부모 기준 */
+}
+.btnShow{
+  top: 260px; 
+  left: 20px;
+  position: absolute; 
+}
+.text{
+  width: 400px; 
+  display: none; /* 시작시 숨기기 */
+  line-height: 1.5;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM 요소 추가 예제</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      background: #f0f0f0;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>할 일 목록</h1>
+  <ul id="todo-list">
+    <li>자바스크립트 공부하기</li>
+    <li>일본어 공부하기</li>
+  </ul>
+  <button id="addBtn">할 일 추가</button>
+
+  <script>
+    // 요소 선택
+    const todoList = document.getElementById("todo-list");
+    const addBtn = document.getElementById("addBtn");
+
+    // 버튼 클릭 이벤트
+    addBtn.addEventListener("click", function() {
+      // 새로운 <li> 요소 생성
+      const newItem = document.createElement("li");
+      newItem.textContent = "운동하기";
+
+      // 리스트에 추가
+      todoList.appendChild(newItem);
+    });
+  </script>
+</body>
+</html>

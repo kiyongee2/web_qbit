@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM 실습 예제</title>
+  <style>
+    #message {
+      font-size: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">DOM 실습</h1>
+  <p id="message">여기를 바꿔보세요!</p>
+  <button id="btn">클릭하세요</button>
+
+  <script>
+    // 요소 선택
+    const title = document.getElementById("title");
+    const message = document.getElementById("message");
+    const button = document.getElementById("btn");
+
+    // 버튼 클릭 이벤트 등록
+    button.addEventListener("click", function() {
+      // 제목 텍스트 변경
+      title.textContent = "제목이 바뀌었습니다!";
+
+      // 메시지 내용과 스타일 변경
+      message.textContent = "버튼이 클릭되었네요 🎉";
+      message.style.color = "red";
+      message.style.fontWeight = "bold";
+    });
+  </script>
+</body>
+</html>
