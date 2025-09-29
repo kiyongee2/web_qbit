@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>날짜/시간 표시하기</h2> 
+  <p id="demo"></p>
+
+  <script>
+    const now = new Date();
+
+    let demo = document.getElementById("demo");
+    demo.innerHTML += `현재 년도: ${now.getFullYear()}<br>`;
+    demo.innerHTML += `현재 월: ${now.getMonth() + 1}<br>`;
+    demo.innerHTML += `현재 일: ${now.getDate()}<br>`;
+    demo.innerHTML += `현재 시: ${now.getHours()}<br>`;
+    demo.innerHTML += `현재 분: ${now.getMinutes()}<br>`;
+    demo.innerHTML += `현재 초: ${now.getSeconds()}<br>`;
+    demo.innerHTML += `현재 요일: ${now.getDay()}<br>`;
+    demo.innerHTML += `현재까지 시간(초): ${now.getTime()/1000}<br>`;
+    
+    demo.innerHTML += `현재 날짜: ${now.toLocaleDateString()}<br>`;
+    demo.innerHTML += `현재 시간: ${now.toLocaleTimeString()}<br>`;
+  </script>
+
+</body>
+</html>

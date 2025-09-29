@@ -1,21 +1,27 @@
-function showGugudan() {
-  const result = document.getElementById("result");
+//구구단 전체
 
-  let table = "<table>";
-  table += "<tr>";
-  for (let dan = 2; dan <= 9; dan++) {
-    table += `<th>${dan}단</th>`;
+const result = document.getElementById("result");
+/*let output = "";
+
+for (let i = 2; i <= 9; i++) {
+  output += `<h3>${i}단</h3>`;
+  for (let j = 1; j <= 9; j++) {
+    output += `${i} x ${j} = ${i * j}<br>`;
   }
-  table += "</tr>";
-
-  for (let i = 1; i <= 9; i++) {
-    table += "<tr>";
-    for (let dan = 2; dan <= 9; dan++) {
-      table += `<td>${dan} x ${i} = ${dan * i}</td>`;
-    }
-    table += "</tr>";
-  }
-
-  table += "</table>";
-  result.innerHTML = table;
+  output += "<br>";
 }
+result.innerHTML = output;*/
+
+
+let output = "";
+for (let i = 2; i <= 9; i++) {
+  output += "<div>"
+  output += `<h3>${i}단</h3>`;
+  for (let j = 1; j <= 9; j++) {
+    output += `${i} x ${j} = ${i * j}<br>`;
+  }
+  output += "</div>";
+}
+
+result.innerHTML = output;
+

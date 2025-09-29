@@ -12,14 +12,14 @@ if(num % 2 == 0){
 
 let num = prompt("숫자를 입력하세요.", "1");
 
-if(num != null){
-   num = parseInt(num); //문자열 -> 숫자 변환
-
-  if(num % 2 == 0){
-      result.textContent = `${num}는(은) 짝수입니다.`;
-  } else {
-      result.textContent = `${num}는(은) 홀수입니다.`;
-  } 
+if(num == null || isNaN(num)){
+   result.textContent = `입력이 취소되었습니다.`;
 }else{
-    console.log("입력이 취소되었습니다.");
+    num = parseInt(num); //문자열 -> 숫자 변환
+
+    if(num % 2 == 0){
+        result.textContent = `${num}는(은) 짝수입니다.`;
+    } else {
+        result.textContent = `${num}는(은) 홀수입니다.`;
+    } 
 }

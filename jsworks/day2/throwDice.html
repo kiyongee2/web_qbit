@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Throw Dice</title>
+  <style>
+    body{text-align: center;}
+    button{
+      margin-top: 30px;
+      padding: 10px 15px;
+      font-size: 1.3rem;
+    }
+    p{font-size: 1.5rem; color: blue};
+  </style>
+</head>
+<body>
+  <button onclick="throwDice()">주사위</button>
+  <p id="demo"></p>
+
+  <script>
+    function throwDice(){
+      let dice = Math.floor(Math.random() * 6) + 1;
+      const demo = document.querySelector("#demo");
+
+      demo.textContent = dice;
+    }
+  </script>
+  
+</body>
+</html>
