@@ -19,7 +19,7 @@ students.forEach(function(student, index, array){
 const arr = [10, 20, 30, 40, 50];
 let sum = 0;
 
-arr.forEach(function(value, index, array){
+arr.forEach(value => {
   sum += value;
 });
 console.log('합계 : ' + sum);  

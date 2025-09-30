@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/book.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Person 객체</h3>
+  <div id="demo"></div>
+
+  <script>
+    let person = {
+      name: "이정후",
+      age: 26,
+      isMerried: false,
+
+      play() {
+        return `${this.name}이(가) 야구를 합니다.`;
+      }
+    };
+
+    console.log(person);
+    console.log(person.name);
+
+    const demo = document.getElementById("demo");
+    demo.innerHTML = `
+      이름: ${person.name} <br>
+      나이: ${person.age} <br>
+      결혼여부: ${person.isMerried ? "기혼" : "미혼"} <br>
+      ${person.play()} <br>
+    `;
+
+  </script>
+</body>
+</html>

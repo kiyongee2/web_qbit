@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/book.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h3>클래스의 상속</h3>
+
+  <script>
+    // 상속 정의
+    class Animal {
+      constructor(name) {
+        this.name = name;
+      }
+      speak() {
+        console.log(`${this.name}이(가) 소리를 냅니다.`);
+      }
+    }
+
+    class Dog extends Animal {
+      speak() {
+        console.log(`${this.name}이(가) 멍멍 짖습니다.`);
+      }
+    }
+
+    let dog = new Dog("초코");
+    dog.speak(); // 초코이(가) 멍멍 짖습니다.
+
+  </script>
+</body>
+</html>
