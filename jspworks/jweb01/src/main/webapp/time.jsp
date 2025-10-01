@@ -9,13 +9,12 @@
 	#content{width: 90%; margin: 0 auto; text-align: center;}
 </style>
 <script>
-	setInterval(myWatch, 1000);
-	
-	function myWatch(){
+	//디지털 시계 
+	setInterval(() => {
 		let date = new Date();
 		let now = date.toLocaleTimeString();
 		document.getElementById("demo").innerHTML = now;
-	}
+	}, 1000);
 </script>
 </head>
 

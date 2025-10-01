@@ -9,8 +9,9 @@
 <body>
 	<%@ include file = "header.jsp" %>
 	
-	<p>방문해 주셔서 감사합니다. </p>
+	<p>방문을 환영합니다~ </p>
 	
 	<%@ include file = "footer.jsp" %>
 </body>
 </html>
+

@@ -8,36 +8,29 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/calc")
-public class CalcServlet extends HttpServlet {
+@WebServlet("/login")
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int n1 = Integer.parseInt(request.getParameter("n1"));
-		int n2 = Integer.parseInt(request.getParameter("n2"));
-		String op = request.getParameter("op");
 		
-		long result = 0;
-		
-		switch(op) {
-		case "+":
-			result = n1 + n2; break;
-		case "-":
-			result = n1 - n2; break;
-		case "*":
-			result = n1 * n2; break;
-		case "/":
-			result = n1 / n2; break;
-		}
+		request.setCharacterEncoding("utf-8");
 		
 		response.setContentType("text/html; charset=utf-8");
 		
+		String id = request.getParameter("uid");
+		String pwd = request.getParameter("passwd");
+		
+		System.out.println(id + ", " + pwd);
+		
 		PrintWriter out = response.getWriter();
-			out.append("<html><body><h2>안녕~ 서블릿!</h2><hr>")
-			   .append("계산 결과:  " + result + "</body></html>");
+		out.append("<html><body><h3>로그인 내역</h3><hr>")
+		   .append("<p>아이디: " + id + "</p>")
+		   .append("<p>패스워드: " + pwd + "</p></body></html>");
 	}
+
 }

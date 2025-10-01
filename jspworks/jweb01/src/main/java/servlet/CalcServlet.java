@@ -37,7 +37,7 @@ public class CalcServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		
 		PrintWriter out = response.getWriter();
-			out.append("<html><body><h2>안녕~ 서블릿!</h2><hr>")
+			out.append("<html><body><h2>정수형 계산기</h2><hr>")
 			   .append("계산 결과:  " + result + "</body></html>");
 	}
 }
