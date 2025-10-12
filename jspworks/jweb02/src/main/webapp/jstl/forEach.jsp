@@ -32,12 +32,12 @@
 	    request.setAttribute("names", names);
 	%>
 	
-	<!-- varStatus 속성을 사용하면 반복 상태를 추적할 수 있습니다.
+	<!-- varStatus 속성
 		status.index → 0부터 시작하는 인덱스
 		status.count → 1부터 시작하는 반복 횟수  -->
 	
 	<c:forEach var="name" items="${names}" varStatus="status">
-	    ${status.index} : ${name}<br>
+	    ${status.count} : ${name}<br>
 	</c:forEach>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <title>jstl - core</title>
 </head>
 <body>
-	<c:set var="score" value="89" />
+	<c:set var="score" value="${param.score}" />
 	<h2>시험 점수: ${score}</h2>
 	<c:choose>
 		<c:when test="${score>=90 && score<=100}">
