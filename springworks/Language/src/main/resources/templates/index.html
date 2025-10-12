@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Language</title>
+</head>
+<body>
+    <h2 th:text="#{greeting}">기본 인사</h2>
+    <p th:text="#{language}">언어</p>
+
+    <hr>
+    <p>
+        현재 언어: <span th:text="${#locale}">언어</span>
+    </p>
+    <p>
+        <a href="?lang=ko">한국어</a> |
+        <a href="?lang=en">English</a> |
+        <a href="?lang=ja">日本語</a> <!-- 일본어 추가 예시 -->
+    </p>
+    
+    <!-- 현재 URL 유지하면서 언어 변경 -->
+    <p>
+        <a th:href="@{/(lang=ko)}">한국어 (Thymeleaf)</a> |
+        <a th:href="@{/(lang=en)}">English (Thymeleaf)</a>
+    </p>
+</body>
+</html>

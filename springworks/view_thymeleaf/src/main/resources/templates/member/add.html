@@ -6,9 +6,9 @@
 </head>
 <body>
 	<h1>회원 등록</h1>
-	<form th:action="@{/members/add}" method="post" th:object="${member}">
-	    이름: <input type="text" th:field="*{name}"><br>
-	    이메일: <input type="text" th:field="*{email}"><br>
+	<form th:action="@{/members/add}" method="post">
+	    이름: <input type="text" name = "name"><br>
+	    이메일: <input type="text" name ="email"><br>
 	    <button type="submit">등록</button>
 	</form>
 	<p><a th:href="@{/members}">목록으로</a></p>

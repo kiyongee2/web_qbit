@@ -30,7 +30,7 @@ public class RegisterServlet extends HttpServlet {
 		out.println("<body><h2>회원 등록 결과</h2><hr>");
 		out.println("<p>이름: " + name + "</p>");
 		out.println("<p>이메일: " + email + "</p>");
-		out.println("<a href='/servlet/register.jsp'>다시 입력</a>");
+		out.println("<a href='/jweb01/servlet/register.jsp'>다시 입력</a>");
 		out.println("</body></html>");
 	}
 	

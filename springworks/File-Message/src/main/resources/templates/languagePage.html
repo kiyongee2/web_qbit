@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Language</title>
+</head>
+<body>
+	<h2 th:text="#{greeting}">기본 인사</h2>
+
+    <p th:text="#{language}">언어</p>
+
+    <hr>
+    <p>
+        <a href="?lang=ko">한국어</a> |
+        <a href="?lang=en">English</a> |
+    </p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>managerPage</title>
+</head>
+<body>
+	<h3>회원 전용 페이지</h3>
+	<p>뷰 페이지는 <span th:text="${data}"></span> 입니다.</p>
+	<p>
+        <a th:href="@{/auth}">[메인으로]</a> |
+        <a th:href="@{/logout}">[로그아웃]</a>
+    </p>
+</body>
+</html>
+

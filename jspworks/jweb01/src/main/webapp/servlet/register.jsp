@@ -12,7 +12,7 @@
 </head>
 <body>
 	<h2>회원 가입</h2>
-	<form action="/register" method="post">
+	<form action="/jweb01/register" method="post">
 		<ul>
 		  <li>
 		  	<label for="uname">이름 : </label>

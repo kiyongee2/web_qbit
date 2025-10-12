@@ -3,6 +3,7 @@ package com.khit.view.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -12,7 +13,7 @@ import com.khit.view.repository.MemberRepository;
 import lombok.AllArgsConstructor;
 
 @RequestMapping("/members")
-@AllArgsConstructor
+@AllArgsConstructor //생성자 주입 - 객체 생성
 @Controller
 public class MemberController {
 	
@@ -27,8 +28,7 @@ public class MemberController {
 	
 	//회원 등록 화면
 	@GetMapping("/add")
-	public String addForm(Model model) {
-		model.addAttribute("member", new Member());
+	public String addForm() {
 		return "member/add";
 	}
 	
@@ -38,7 +38,6 @@ public class MemberController {
 		repository.save(member);
 		return "redirect:/members";
 	}
-	
 }
 
 
