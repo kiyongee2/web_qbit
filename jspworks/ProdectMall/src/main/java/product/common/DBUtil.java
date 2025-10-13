@@ -1,4 +1,4 @@
-package product;
+package product.common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -16,7 +16,10 @@
 				<img alt="점포" src="/resources/images/store.png">
 			</div>
 			
-			<p><a href="/product?action=list">상품 목록</a></p>
+			<p>
+			   <a href="/member?action=addForm">회원 가입</a> &nbsp; | &nbsp;
+			   <a href="/member?action=loginForm">로그인</a> &nbsp;
+			</p>
 		</div>
 	</section>
 </body>

@@ -1,7 +1,10 @@
-package product;
+package product.service;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import product.model.Product;
+import product.model.ProductDAO;
 
 public class ProductService {
 	

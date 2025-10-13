@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>제품 상세 보기</title>
-	<link rel="stylesheet" href="/resources/css/style.css">
+	<link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body>
 	<section id="container">
