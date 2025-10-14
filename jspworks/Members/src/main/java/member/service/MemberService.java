@@ -23,4 +23,9 @@ public class MemberService {
 	public boolean checkLogin(Member member) {
 		return dao.checkLogin(member);
 	}
+	
+	//회원 정보
+	public Member getMember(String mid) {
+		return dao.getMember(mid);
+	}
 }

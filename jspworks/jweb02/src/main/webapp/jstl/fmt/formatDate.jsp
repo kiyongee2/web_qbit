@@ -30,20 +30,7 @@
 		<fmt:formatDate value="${now}" pattern="yyyy-MM-dd" />
 	</p>
 	<p>yyyy년 MM월 dd일 a hh:mm:ss 형식: 
-		<fmt:formatDate value="${now}" pattern="yyyy년 MM월 dd일 a hh:mm:ss" />
-	</p>
-	
-	<hr>
-
-	<h3>로케일 지정 예제</h3>
-	<fmt:setLocale value="en_US" />
-	<p>영문 형식: 
-		<fmt:formatDate value="${now}" type="both" dateStyle="full" />
-	</p>
-
-	<fmt:setLocale value="ko_KR" />
-	<p>한글 형식: 
-		<fmt:formatDate value="${now}" type="both" dateStyle="full" />
+		<fmt:formatDate value="${now}" pattern="yyyy년 MM월 dd일 a HH:mm:ss" />
 	</p>
 </body>
 </html>

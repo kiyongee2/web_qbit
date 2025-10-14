@@ -78,6 +78,12 @@ public class MemberController extends HttpServlet {
 		}else if(action.equals("logout")) {
 			session.invalidate();
 			nextPage = "index.jsp";
+		}else if(action.equals("info")) {
+			String mid = request.getParameter("mid");
+			
+			Member member = service.getMember(mid);
+			request.setAttribute("member", member);
+			nextPage = "/member/memberInfo.jsp";
 		}
 		
 		RequestDispatcher rd = 

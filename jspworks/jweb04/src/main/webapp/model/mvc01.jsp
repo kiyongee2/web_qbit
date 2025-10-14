@@ -8,20 +8,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>데이터 받기</h2>
-	<p>현재 계절: ${season}
-	<p></p>4계절 :
-		${seasons[0]}, ${seasons[1]}, ${seasons[2]}, ${seasons[3]}
+	<h3>변수, 배열</h3>
+	<p>현재 계절: ${season}</p>
+	<p>현재 계절 : ${seasons[2]}</p>
+	<p>전체 계절</p>
+	<c:forEach var="season" items="${seasons}">
+		${season} <br>
+	</c:forEach>
+	<hr>
 		
-	<!-- list -->
+	<h3>리스트(List)</h3>
     <p>과일: ${fruits[0]}
     <p>과일 장바구니:
 	<c:forEach var="fruit" items="${fruits}">
 	    ${fruit}
 	</c:forEach>
-	<br>
+	<hr>
 	
-	<!-- map -->
+	<h3>맵(Map)</h3>
 	<p>모델명: ${cars.brand}
 	<p>연식: ${cars.year}
 </body>

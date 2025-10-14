@@ -13,7 +13,7 @@
 	<section id="container">
 		<h2>상품 목록</h2>
 		<hr>
-		<form action="/jweb02/product" method="get">
+		<form action="/jweb04/product" method="get">
 			<select name="fruit">
 				<option value="apple">사과</option>
 				<option value="banana">바나나</option>

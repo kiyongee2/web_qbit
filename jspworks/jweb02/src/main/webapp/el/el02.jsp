@@ -1,3 +1,4 @@
+<%@ page import="java.time.LocalDateTime"%>
 <%@page import="java.util.HashMap"%>
 <%@page import="java.util.Map"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -9,6 +10,15 @@
 <title>EL 언어</title>
 </head>
 <body>
+	<!-- 현재 날짜 객체 생성1 -->
+	<% LocalDateTime datetime =	LocalDateTime.now(); %>
+	<p>스크립트 출력 : <%=datetime %></p>
+	
+	<!-- 현재 날짜 객체 생성2 -->
+	<jsp:useBean id="now" class="java.util.Date" />
+	<p>EL 출력 : ${now}</p>
+	<hr>
+	
 	<!-- request에 데이터 저장 -->
 	<%
 		request.setAttribute("name", "한강");
@@ -17,6 +27,7 @@
 	
 	<p>이름: ${name}</p> <%-- 한강 --%>
 	<p>나이: ${age}</p>  <%-- 25 --%>
+	<hr>
 	
 	<!-- 배열, Map 접근 -->
 	<%
@@ -26,6 +37,10 @@
 	
 	<p>${fruits[0]}</p>   <%-- 사과 --%>
 	<p>${fruits[1]}</p>   <%-- 바나나 --%>
+	
+	<% for(int i=0; i<fruits.length; i++){ %>
+	    	<p>${fruits[i]}</p>
+	<% } %> 
 	
 	<%
 	    Map<String, String> map = new HashMap<>();

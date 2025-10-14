@@ -46,7 +46,6 @@ public class ProductController extends HttpServlet {
 			String regdate = request.getParameter("regdate");
 			
 			Product product = new Product(pid, pname, maker, price, regdate);
-			
 			service.addProduct(product);
 			
 			//등록후 목록 페이지로 이동
@@ -58,13 +57,12 @@ public class ProductController extends HttpServlet {
 			service.deleteProduct(pid);
 			response.sendRedirect("/product?action=list");
 			return; //즉시 종료
-		}else if(action.equals("updateForm")) {
+		}else if(action.equals("updateForm")) { //수정 페이지
 			String pid = request.getParameter("pid");
 			Product product = service.getProduct(pid);
 			request.setAttribute("product", product);
-			
 			nextPage = "/product/updateProduct.jsp"; 
-		}else if(action.equals("update")) {
+		}else if(action.equals("update")) { //수정 처리
 			String pid = request.getParameter("pid");
 			String pname = request.getParameter("pname");
 			String maker = request.getParameter("maker");
@@ -72,9 +70,7 @@ public class ProductController extends HttpServlet {
 			String regdate = request.getParameter("regdate");
 			
 			Product product = new Product(pid, pname, maker, price, regdate);
-			
 			service.updateProduct(product);
-			
 			//수정후 상세 페이지로 이동
 			response.sendRedirect("/product?action=list&pid=" + pid);
 			return;

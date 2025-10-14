@@ -1,4 +1,4 @@
-package el;
+package model;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -23,6 +23,7 @@ public class ModelController extends HttpServlet {
 		//배열
 		String[] seasons = {"봄", "여름", "가을", "겨울"};
 		
+		//"season"을 모델로 뷰(mvc01)에 전달
 		request.setAttribute("season", season);
 		request.setAttribute("seasons", seasons);
 		
@@ -36,10 +37,11 @@ public class ModelController extends HttpServlet {
 		cars.put("year", 2025);
 		request.setAttribute("cars", cars);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/mvc/mvc01.jsp");
+		//포워딩 - /model 경로에서 mvc01.jsp 출력함
+		RequestDispatcher rd = 
+				request.getRequestDispatcher("/model/mvc01.jsp");
 		rd.forward(request, response);
 	}
-
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -47,3 +49,5 @@ public class ModelController extends HttpServlet {
 	}
 
 }
+
+

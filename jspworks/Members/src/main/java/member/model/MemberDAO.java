@@ -72,6 +72,30 @@ public class MemberDAO {
 		}
 		return false;
 	}
+	
+	//회원 상세 보기
+	public Member getMember(String mid) {
+		Member member = new Member();
+		String sql = "select * from member where mid = ?";
+		
+		try(Connection conn = DBUtil.getConnection();
+				PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, mid);
+			
+			ResultSet rs = pstmt.executeQuery();
+			if(rs.next()) {
+				member.setMid(rs.getString("mid"));
+				member.setPasswd(rs.getString("passwd"));
+				member.setName(rs.getString("name"));
+				member.setGender(rs.getString("gender"));
+				member.setJoinDate(rs.getTimestamp("joindate"));
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return member;
+	}
 }
 
 
