@@ -28,7 +28,9 @@
 				<c:forEach var="member" items="#{memberList}" varStatus="i">
 				<tr>
 					<td>${i.count}</td>
-					<td><a href="/member?action=info&mid=${member.mid}">${member.mid}</a></td>
+					<td>
+						<a href="/member?action=info&mid=${member.mid}">${member.mid}</a>
+					</td>
 					<td>${member.name}</td>
 					<td>${member.gender}</td>
 					<td>${member.joinDate}</td>

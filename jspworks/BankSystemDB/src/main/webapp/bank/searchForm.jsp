@@ -4,8 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>계좌 조회</title>
+	<meta charset="UTF-8">
+	<title>계좌 조회</title>
+	<style>
+		body { margin: 40px; }
+	</style>
 </head>
 <body>
     <h2>계좌 조회</h2>

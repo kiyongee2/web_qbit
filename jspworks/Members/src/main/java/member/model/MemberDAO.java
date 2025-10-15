@@ -44,10 +44,8 @@ public class MemberDAO {
 					rs.getString("gender"),
 					rs.getTimestamp("joindate")
 				);
-				
 				list.add(member);
 			}
-			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -56,8 +54,8 @@ public class MemberDAO {
 	
 	//로그인
 	public boolean checkLogin(Member member) {
-		String sql = "select * from member where mid=? and passwd=?";
 		
+		String sql = "select * from member where mid=? and passwd=?";
 		try(Connection conn = DBUtil.getConnection();
 				PreparedStatement pstmt = conn.prepareStatement(sql)){
 			pstmt.setString(1, member.getMid());
@@ -93,7 +91,6 @@ public class MemberDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		
 		return member;
 	}
 }

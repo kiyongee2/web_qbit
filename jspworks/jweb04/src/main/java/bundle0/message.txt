@@ -1,0 +1,4 @@
+title=로그인
+userid=아이디
+password=비밀번호
+button=로그인 

@@ -6,12 +6,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>상품 목록</title>
-	<link rel="stylesheet" href="/resources/css/style.css">
+	<style>
+		body{margin: 20px;}
+		h2{
+			border-bottom: 2px solid #ccc;
+			padding-bottom: 10px;	
+		}
+		table{
+			border: 1px solid #ccc;
+			border-collapse: collapse;
+		}
+		table th, td{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+		}
+	</style>
 </head>
 <body>
 	<section id="container">
 		<h2>상품 목록</h2>
-		<hr>
 		<table>
 			<thead>
 				<tr>

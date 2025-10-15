@@ -4,27 +4,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>계좌 정보</title>
-<style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h2 { color: #333; }
-    .info { margin: 15px 0; }
-    .menu a {
-        display: inline-block;
-        margin: 8px;
-        padding: 8px 15px;
-        background: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .menu a:hover { background: #0056b3; }
-</style>
+	<meta charset="UTF-8">
+	<title>계좌 정보</title>
+	<style>
+	    body { margin: 40px; }
+	    .info { margin: 15px 0; }
+	    .menu a {
+	        display: inline-block;
+	        margin: 8px;
+	        padding: 8px 15px;
+	        background: #eee;
+	        color: #000;
+	        text-decoration: none;
+	        border-radius: 5px;
+	    }
+	    .menu a:hover { background: #ddd; }
+	</style>
 </head>
 <body>
     <h2>계좌 정보</h2>
     <hr>
+    
+    <c:if test="${empty account}">
+        <p style="color:red;">계좌 정보가 없습니다.</p>
+        <p><a href="/bank/main.jsp">메인으로 돌아가기</a></p>
+    </c:if>
 
     <c:if test="${not empty account}">
         <div class="info">
@@ -45,10 +49,7 @@
         </div>
     </c:if>
 
-    <c:if test="${empty account}">
-        <p style="color:red;">계좌 정보가 없습니다.</p>
-        <p><a href="/bank/main.jsp">메인으로 돌아가기</a></p>
-    </c:if>
+    
 </body>
 </html>
 

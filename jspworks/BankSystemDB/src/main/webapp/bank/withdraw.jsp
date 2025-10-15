@@ -4,7 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>출금</title> 
+	<meta charset="UTF-8">
+	<title>출금</title> 
+	<style>
+		body { margin: 40px; }
+	</style>
 </head>
 <body>
 	<h2>출금</h2>

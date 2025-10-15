@@ -11,7 +11,8 @@
 <body>
 	<section id="container">
 		<h2>회원 가입</h2>
-		<form action="/member?action=add" method="post">
+		<form action="/member" method="post">
+			<input type="hidden" name="action" value="add">
 			<ul>
 				<li>
 					<label>아이디</label>

@@ -11,16 +11,14 @@ public class Member {
 	
 	public Member() {}  //기본 생성자
 	
-	public Member(String mid, String passwd, String name, String gender, 
-			Timestamp joinDate) {
+	public Member(String mid, String passwd, String name, 
+			String gender, Timestamp joinDate) {
 		this.mid = mid;
 		this.passwd = passwd;
 		this.name = name;
 		this.gender = gender;
 		this.joinDate = joinDate;
 	}
-
-
 
 	public String getMid() {
 		return mid;

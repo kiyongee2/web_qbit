@@ -4,8 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>거래 내역</title>
+	<meta charset="UTF-8">
+	<title>거래 내역</title>
+	<style>
+		body { margin: 40px; }
+	</style>
 </head>
 <body>
 	<h2>거래 내역</h2>
@@ -33,6 +36,6 @@
     </table>
 
     <br>
-    <a href="/bank/accountInfo.jsp?accountNumber=${account.accountNumber}">계좌 정보</a>
+    <a href="/bank?action=search&accountNumber=${account.accountNumber}">계좌 정보</a>
 </body>
 </html>

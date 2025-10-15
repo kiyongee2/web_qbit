@@ -1,11 +1,11 @@
 package product_mall;
 
 public class Product {
-	private String pid;
-	private String pname;
-	private String maker;
-	private int price;
-	private String date;
+	private String pid;    //상품번호
+	private String pname;  //상품명
+	private String maker;  //제조사
+	private int price;     //가격
+	private String date;   //등록일
 	
 	//생성자
 	public Product(String pid, String pname, String maker, 

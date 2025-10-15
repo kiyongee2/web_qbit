@@ -19,10 +19,6 @@ public class BankAccountController extends HttpServlet {
 	
 	BankAccountService service = new BankAccountService();
        
-    public BankAccountController() {
-        super();
-    }
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
 	}
@@ -32,7 +28,9 @@ public class BankAccountController extends HttpServlet {
         String action = request.getParameter("action");
         String nextPage = "";
         
-        if("create".equals(action)){
+        if("createForm".equals(action)) {
+        	nextPage = "/bank/createAccount.jsp";
+        }else if("create".equals(action)){ //계좌 개설
         	String accountNumber = request.getParameter("accountNumber");
             String owner = request.getParameter("owner");
             int balance = Integer.parseInt(request.getParameter("balance"));
@@ -42,9 +40,11 @@ public class BankAccountController extends HttpServlet {
 	            nextPage = "/bank/accountInfo.jsp";
             }catch(IllegalArgumentException e) {
             	request.setAttribute("error", e.getMessage());
+            	nextPage = "/bank/createAccount.jsp";
             }
-        }else if ("search".equals(action)) {
-            // 계좌 검색
+        }else if("searchForm".equals(action)) {
+        	nextPage = "/bank/searchAccount.jsp";
+        }else if ("search".equals(action)) { // 계좌 검색
             String accNum = request.getParameter("accountNumber");
 
             try {
@@ -53,9 +53,9 @@ public class BankAccountController extends HttpServlet {
                 nextPage = "/bank/accountInfo.jsp";
             } catch (IllegalArgumentException e) {
                 request.setAttribute("error", e.getMessage());
-                nextPage = "/index.jsp";
+                nextPage = "/bank/main.jsp";
             }
-        }else if("deposit".equals(action)) {
+        }else if("deposit".equals(action)) {  //입금
         	String accNum = request.getParameter("accountNumber");
         	int amount = Integer.parseInt(request.getParameter("amount"));
         	
@@ -64,7 +64,7 @@ public class BankAccountController extends HttpServlet {
         	//입금후 info 페이지로 이동
 			response.sendRedirect("bank?action=search&accountNumber=" + accNum);
 			return;
-        }else if("withdraw".equals(action)) {
+        }else if("withdraw".equals(action)) { //출금
         	String accNum = request.getParameter("accountNumber");
         	int amount = Integer.parseInt(request.getParameter("amount"));
   
@@ -77,7 +77,7 @@ public class BankAccountController extends HttpServlet {
                 request.setAttribute("error", e.getMessage());
                 nextPage = "/bank/withdraw.jsp";
             }
-        }else if(action.equals("history")) {
+        }else if(action.equals("history")) {  //거래 내역
         	String accNum = request.getParameter("accountNumber");
         	List<Transaction> list = service.getTransactions(accNum);
         	

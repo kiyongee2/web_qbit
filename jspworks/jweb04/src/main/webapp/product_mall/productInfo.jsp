@@ -8,11 +8,14 @@
 <title>제품 상세 보기</title>
 <style>
 	body{margin: 20px;}
+	h2{
+		border-bottom: 2px solid #ccc;
+		padding-bottom: 10px;	
+	}
 </style>
 </head>
 <body>
 	<h2>상품 정보</h2>
-	<hr>
 	<ul>
 		<li>상품 코드: ${product.pid}</li>
 		<li>상품 이름: ${product.pname}</li>

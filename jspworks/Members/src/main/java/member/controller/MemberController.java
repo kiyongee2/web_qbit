@@ -17,14 +17,10 @@ import member.service.MemberService;
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	MemberService service;
+	MemberService service; //인스턴스 선언
 	
-	public MemberController() {
-		service = new MemberService();
-	}
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request, response);
+	public MemberController() { //인스턴스 생성
+		service = new MemberService(); 
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -86,9 +82,13 @@ public class MemberController extends HttpServlet {
 			nextPage = "/member/memberInfo.jsp";
 		}
 		
+		//포워딩
 		RequestDispatcher rd = 
 				request.getRequestDispatcher(nextPage);
 		rd.forward(request, response);
 	}
-
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
 }
