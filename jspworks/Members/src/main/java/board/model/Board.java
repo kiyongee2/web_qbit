@@ -1,4 +1,4 @@
-package member.model;
+package board.model;
 
 import java.sql.Timestamp;
 
@@ -7,6 +7,7 @@ public class Board {
 	private String title;   //글제목
 	private String content; //글내용
 	private String mid;     //글쓴이(Member join)
+	private int hit;
 	private Timestamp regDate; //작성일
 	
 	public int getBnum() {
@@ -38,5 +39,11 @@ public class Board {
 	}
 	public void setRegDate(Timestamp regDate) {
 		this.regDate = regDate;
+	}
+	public int getHit() {
+		return hit;
+	}
+	public void setHit(int hit) {
+		this.hit = hit;
 	}
 }

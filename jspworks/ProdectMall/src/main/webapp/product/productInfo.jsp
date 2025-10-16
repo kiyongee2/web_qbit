@@ -20,13 +20,13 @@
 		</ul>
 		<div>
 			<a href="/product?action=updateForm&pid=${product.pid}">
-				<button type="submit">수정</button>
+				<button>수정</button>
 			</a>
 			<a onclick="return confirm('정말로 삭제하시겠습니까?')"
 			   href="/product?action=delete&pid=${product.pid}">
-			<button type="submit">삭제</button></a>
+			<button>삭제</button></a>
 			<a href="/product?action=list">
-				<button type="button">목록</button>
+				<button>목록</button>
 			</a>
 		</div>
 	</section>

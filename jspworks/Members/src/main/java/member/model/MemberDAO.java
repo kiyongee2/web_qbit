@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import member.common.DBUtil;
+import common.DBUtil;
 
 public class MemberDAO {
 	//회원 가입

@@ -28,7 +28,7 @@
 				  ${error}
 				</c:if>
 			</div>
-			<div class="btn">
+			<div class="btnLogin">
 				<input type="submit" value="로그인">
 				<input type="reset" value="취소">
 			</div>

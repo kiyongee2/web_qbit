@@ -8,10 +8,6 @@
 a{text-decoration: none;}
 a:hover{text-decoration: underline; }
 ul li{margin: 10px;}
-table{
-	border: 1px solid #ccc;
-	border-collapse: collapse;
-}
 h2{
 	border-bottom: 2px solid #ccc;
 	padding-bottom: 10px;	
@@ -19,6 +15,11 @@ h2{
 .main-pic img{
 	width: 40%;
 	border-radius: 10px;
+}
+table{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin-bottom: 10px;
 }
 table th, td{
 	border: 1px solid #ccc;
@@ -30,4 +31,11 @@ form ul li label{
 	float: left;
 }
 /* login 스타일 */
-.btn{margin: 20px;}
+.btnLogin, .btnJoin{margin-left: 20px;}
+
+/* write 스타일 */
+textarea{resize: none;}
+.btnWrite{
+	margin: 10px 10px 10px 350px;
+}
+.btnWrite button{padding: 5px;}

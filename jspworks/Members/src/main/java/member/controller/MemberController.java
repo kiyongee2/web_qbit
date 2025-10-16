@@ -46,7 +46,8 @@ public class MemberController extends HttpServlet {
 			member.setName(name);
 			member.setGender(gender);
 			
-			service.addMember(member);
+			service.addMember(member); //addMember() 호출
+			session.setAttribute("sessionId", mid); //세션 발급
 			
 			//등록 후 목록 페이지로 이동
 			response.sendRedirect("/member?action=list");

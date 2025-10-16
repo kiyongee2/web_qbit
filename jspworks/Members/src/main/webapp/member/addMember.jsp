@@ -32,7 +32,7 @@
 					<input type="radio" name="gender" value="여자">여
 				</li>
 			</ul>
-			<div class="btn">
+			<div class="btnJoin">
 				<input type="submit" value="가입">
 				<input type="reset" value="취소">
 			</div>

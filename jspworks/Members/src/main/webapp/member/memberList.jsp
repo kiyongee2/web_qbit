@@ -12,7 +12,10 @@
 	<section id="container">
 		<h2>회원 목록</h2>
 		<p>
-			[${sessionId}]님 <a href="/member?action=logout">로그아웃</a>
+			<a href="/index.jsp">Home</a> &nbsp; | &nbsp;
+			<a href="/board?action=boardList">게시판</a> &nbsp; | &nbsp;
+			[${sessionId}]님 <a href="/member?action=logout">로그아웃</a> 
+			
 		</p>
 		<table>
 			<thead>

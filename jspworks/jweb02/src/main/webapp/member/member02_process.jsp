@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <body>
-<jsp:useBean id="member" class="member.Member" />
+<jsp:useBean id="member" class="members.Member" />
 <jsp:setProperty property="id" name="member"/>
 <jsp:setProperty property="passwd" name="member"/>
 <jsp:setProperty property="name" name="member"/>
