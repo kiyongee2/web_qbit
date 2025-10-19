@@ -93,6 +93,19 @@ public class MemberDAO {
 		}
 		return member;
 	}
+	
+	//회원 삭제
+	public void deleteMember(String mid) {
+		String sql = "delete from member where mid = ?";
+		
+		try(Connection conn = DBUtil.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql)){
+			ps.setString(1, mid);
+			ps.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
 
 

@@ -38,7 +38,7 @@ public class BoardController extends HttpServlet {
 		}else if("write".equals(action)) { //글쓰기 처리
 			String title = request.getParameter("title");
 			String content = request.getParameter("content");
-			String mid = (String)session.getAttribute("sessionId");
+			String mid = request.getParameter("mid");
 			
 			Board board = new Board();
 			board.setTitle(title);

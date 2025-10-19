@@ -19,6 +19,7 @@
 			<p>
 			   <a href="/member?action=addForm">회원 가입</a> &nbsp; | &nbsp;
 			   <a href="/member?action=loginForm">로그인</a> &nbsp; | &nbsp;
+			   <a href="/member?action=list">회원목록</a> &nbsp; | &nbsp;
 			   <a href="/board?action=boardList">게시판</a> &nbsp;
 			</p>
 		</div>

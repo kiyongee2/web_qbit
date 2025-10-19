@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ taglib uri="jakarta.tags.fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,24 +12,24 @@
 <body>
 	<section id="container">
 		<h2>게시글 상세보기</h2>
-		<table>
-			<tbody>
-				<tr>
-					<td><input type="text" name="title" size=52 
-						value="${board.title}" readonly></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="mid" size=52 readonly
-						value="글쓴이: ${board.mid} (작성일: ${board.regDate})"></td>
-				</tr>
-				<tr>
-					<td>
-						<textarea  name="content" rows="10" 
-								cols="50" readonly>${board.content}</textarea>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="detail">
+			<fieldset>
+				<ul>
+					<li>
+						<input type="text" name="title" size=62
+								value="${board.title}" readonly>
+					</li>
+					<li>
+						<textarea  name="content" rows="10" cols="60"
+								readonly>${board.content}</textarea>
+					</li>
+					<li>
+						<input type="text" name="mid" size=62 
+								value="글쓴이: ${board.mid} (작성일: ${board.regDate})">
+					</li>
+				</ul>
+			</fieldset>
+		</div>
 		<p>
 		    <c:if test="${board.mid eq sessionId}">
 			    <a href="/board?action=updateForm&bnum=${board.bnum}">

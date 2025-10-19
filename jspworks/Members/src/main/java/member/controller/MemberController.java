@@ -17,23 +17,19 @@ import member.service.MemberService;
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	MemberService service; //인스턴스 선언
-	
-	public MemberController() { //인스턴스 생성
-		service = new MemberService(); 
-	}
+	MemberService service = new MemberService(); //인스턴스 생성
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
 		String nextPage = "";
-		HttpSession session = request.getSession();
+		HttpSession session = request.getSession(); //세션 객체 생성
 		
 		if(action.equals("list")) {
 			List<Member> memberList = service.getMemberList();
 			request.setAttribute("memberList", memberList);
 			nextPage = "/member/memberList.jsp";
 		}else if(action.equals("addForm")) {
-			nextPage = "/member/addMember.jsp";
+			nextPage = "/member/addForm.jsp";
 		}else if(action.equals("add")) {
 			String mid = request.getParameter("mid");
 			String pwd = request.getParameter("passwd");
@@ -47,7 +43,8 @@ public class MemberController extends HttpServlet {
 			member.setGender(gender);
 			
 			service.addMember(member); //addMember() 호출
-			session.setAttribute("sessionId", mid); //세션 발급
+			//회원 가입후 아이디 세션 발급
+			session.setAttribute("sessionId", mid); 
 			
 			//등록 후 목록 페이지로 이동
 			response.sendRedirect("/member?action=list");
@@ -64,7 +61,8 @@ public class MemberController extends HttpServlet {
 			
 			boolean result = service.checkLogin(member);
 			if(result) {
-				session.setAttribute("sessionId", id); //세션 발급
+				//아이디 세션 발급
+				session.setAttribute("sessionId", id); 
 				response.sendRedirect("/member?action=list");
 				return;
 			}else {
@@ -81,6 +79,18 @@ public class MemberController extends HttpServlet {
 			Member member = service.getMember(mid);
 			request.setAttribute("member", member);
 			nextPage = "/member/memberInfo.jsp";
+		}else if(action.equals("delete")) {
+			String mid = request.getParameter("mid");
+			
+			service.deleteMember(mid);
+			//삭제후 회원 목록 이동
+			response.sendRedirect("/member?action=list");
+			return;
+		}else if(action.equals("updateForm")) {
+			String mid = request.getParameter("mid");
+			Member member = service.getMember(mid);
+			request.setAttribute("member", member);
+			nextPage = "/member/updateForm.jsp";
 		}
 		
 		//포워딩

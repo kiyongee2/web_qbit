@@ -6,7 +6,6 @@ import member.model.Member;
 import member.model.MemberDAO;
 
 public class MemberService {
-	
 	MemberDAO dao = new MemberDAO();
 	
 	//회원 가입
@@ -28,4 +27,10 @@ public class MemberService {
 	public Member getMember(String mid) {
 		return dao.getMember(mid);
 	}
+
+	public void deleteMember(String mid) {
+		dao.deleteMember(mid);
+	}
+	
+	
 }

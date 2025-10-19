@@ -25,8 +25,8 @@ table th, td{
 	border: 1px solid #ccc;
 	padding: 5px 10px;
 }
-form ul li{list-style: none;}
-form ul li label{
+ul li{list-style: none;}
+ul li label{
 	width: 80px;
 	float: left;
 }
@@ -34,6 +34,10 @@ form ul li label{
 .btnLogin, .btnJoin{margin-left: 20px;}
 
 /* write 스타일 */
+.writeForm, .detail{
+	width: 500px;
+}
+.writeForm ul, .detail ul{padding: 0;}
 textarea{resize: none;}
 .btnWrite{
 	margin: 10px 10px 10px 350px;

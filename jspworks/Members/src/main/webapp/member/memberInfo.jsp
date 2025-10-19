@@ -18,9 +18,16 @@
 			<li>성별: ${member.gender}</li>
 			<li>가입일: ${member.joinDate}</li>
 		</ul>
-		<a href="/member?action=list">
-			<button type="button">목록</button>
-		</a>
+		<p>
+		    <a href="/member?action=updateForm&mid=${member.mid}">
+		    	<button>수정</button>
+		    </a>
+		    <a href="/member?action=delete&mid=${member.mid}">
+		    	<button onclick="return confirm('정말 탈퇴하시겠습니까?')">탈퇴</button>
+		    </a>
+			<a href="/member?action=list">
+				<button type="button">목록</button>
+			</a>
 	</section>
 </body>
 </html>
