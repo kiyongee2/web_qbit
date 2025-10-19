@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>회원 가입...</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<section id="container">
+		<h2>글 상세 보기</h2>
+		<div class="boardDetail">
+			<fieldset>
+				<ul>
+					<li>
+						<input type="text" name="title" size=62
+							th:value="${board.title}" readonly>
+					</li>
+					<li>
+						<textarea rows="8" cols="60" name="content"
+							 readonly th:text="${board.content}"></textarea>
+					</li>
+					<li>
+						<input type="text" name="writer" size=62 readonly
+								th:value="'글쓴이: ' + ${board.writer} + '(작성일: ' 
+								+ ${board.regDate} + ')' ">
+					</li>
+					<li>
+						<input type="text" name="writer" size=62 readonly
+								th:value="'조회수: ' + ${board.hits}">
+					</li>
+					<li>
+						<th:block th:if="${session.loginName == board.writer}">
+							<a th:href="@{|/boards/update/${board.id}|}"><button>수정</button></a>
+							<a th:href="@{|/boards/delete/${board.id}|}"
+							   onclick="return confirm('정말 삭제하시겠습니까?')"><button>삭제</button></a>
+						</th:block>
+						<a th:href="@{/boards}"><button>목록</button></a>
+					</li>
+				</ul>
+			</fieldset>
+		</div>
+	</section>
+</body>
+</html>

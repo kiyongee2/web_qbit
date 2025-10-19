@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#container{
+	width: 80%;
+	margin: 0 auto;
+}
+#main{text-align: center;}
+h2{
+	border-bottom: 2px solid #ccc;
+	padding: 16px;
+	text-align: center;
+}
+.main-pic img{
+	width: 40%;
+	border-radius: 8px;
+}
+.menu{margin: 10px;}
+ul li{
+	list-style: none;
+	margin: 16px;
+}
+table thead{background-color: #eee;}
+.msg{color: #00f; margin: 10px;}
+.error{color: #f00; margin: 10px;}
+
+/* join 스타일 */
+.joinForm, .loginForm{
+	width: 400px; 
+	margin: 0 auto;
+}
+.joinForm label, .loginForm label{
+	width: 80px;
+	float: left;
+}
+
+/* memberList 스타일  */
+.memberList, .boardList{
+	width: 600px;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.memberList, th, td, .boardList th, td{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+}
+
+/* memberInfo 스타일 */
+.memberInfo{
+	width: 400px;
+	margin: 0 auto;
+}
+.memberInfo label{
+	width: 80px;
+	float: left;
+}
+.btnList{margin: 16px;}
+.btnList, button{padding: 5px 10px;}
+
+/* boardList 스타일 */
+.btnWrite{
+	width: 500px; 
+	margin: 0 auto;
+	text-align: right;
+}
+.btnWrite button{padding: 8px 12px;}
+
+/* write 스타일 */
+.writeForm, .boardDetail, .boardUpdate{
+	width: 500px;
+	margin: 0 auto;
+}
+.writeForm ul, .boardDetail ul, .boardUpdate ul{padding-left: 0;}
+.wirteForm ul li{margin: 0;}
+.writeForm textarea, .boardDetail textarea, .boardUpdate textarea{
+	resize: none;
+	margin: 0;
+}
+
+.pagination{
+	margin: 10px;
+	text-align: center;
+}
+.pagination a{
+	padding: 4px;
+	text-decoration: none;
+}
+

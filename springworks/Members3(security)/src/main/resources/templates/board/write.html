@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="UTF-8">
+<title>회원 가입...</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<section id="container">
+		<h2>글쓰기</h2>
+		<form th:action="@{/boards/write}" method="post" class="writeForm"
+				th:object="${boardDTO}">
+			<div th:if="${#fields.hasAnyErrors()}">
+			    <div th:each="err : ${#fields.allErrors()}"
+			         th:text="${err}" class="error"></div>
+			</div>
+			<fieldset>
+				<ul>
+					<li>
+						<input type="text" th:field="*{title}" size=62
+								placeholder="제목">
+					</li>
+					<li>
+						<textarea rows="8" cols="60" th:field="*{content}"
+							    placeholder="내용"></textarea>
+					</li>
+					<li>
+						 <div sec:authorize="isAuthenticated()">
+						     <input type="text" size=62 name="writer" readonly
+						     		th:value="${#authentication.principal.name}">
+						  </div>
+					</li>
+					<li>
+						<input type="submit" value="등록">
+						<input type="reset" value="취소">
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
