@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<div id="content">
+		<h2>Home</h2>
+		
+		<!-- 데이터(모델) 받기 -->
+		<h3 th:text="${message}"></h3>
+		
+		<hr>
+		<p>
+			<a th:href="@{/time}">시간 페이지로 이동</a>
+		</p>
+		<hr>
+		
+		<p>
+			<a th:href="@{/members}">회원 목록</a>
+		</p>
+	</div>
+</body>
+</html>
+

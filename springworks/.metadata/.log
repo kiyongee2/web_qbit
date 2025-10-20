@@ -5639,3 +5639,1035 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-10-20 16:06:45.818 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-20 16:06:49.636
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-20 16:06:56.607
+!MESSAGE Logback config file: D:\큐비트온&스페이스시엘\javaweb\springworks\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-10-20 16:06:57.296
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-10-20 16:06:57.296
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-10-20 16:06:57.649
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-10-20 16:06:57.649
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-20 16:07:04.844
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.25.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/큐비트온&스페이스시엘/javaweb/springworks/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1760944024843
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\sts-4.25.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:04.845
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-20 16:07:04.860
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3900
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.035
+!MESSAGE Boot project ADDED: File-Message
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.036
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.041
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-10-20 16:07:08.084
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\LG'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.245
+!MESSAGE Boot project ADDED: Language
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.246
+!MESSAGE Boot project ADDED: Members
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.291
+!MESSAGE Boot project ADDED: Members2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.350
+!MESSAGE Boot project ADDED: Members3(security)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.383
+!MESSAGE Boot project ADDED: Spring-JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.404
+!MESSAGE Boot project ADDED: ajax-test
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.467
+!MESSAGE Boot project ADDED: rest-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:07:08.468
+!MESSAGE Boot project ADDED: view_thymeleaf
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 16:34:03.484
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:676)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:648)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:663)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$4(LanguageServiceAccessor.java:275)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:283)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:288)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
+	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:62)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:89)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:190)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:196)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:141)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:130)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jface.text.source.SourceViewer.ensureCodeMiningManagerInstalled(SourceViewer.java:1321)
+	at org.eclipse.jface.text.source.SourceViewer.setCodeMiningAnnotationPainter(SourceViewer.java:1340)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.showAnnotations(SourceViewerDecorationSupport.java:830)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.updateTextDecorations(SourceViewerDecorationSupport.java:301)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.install(SourceViewerDecorationSupport.java:269)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.createPartControl(AbstractDecoratedTextEditor.java:468)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor.createPartControl(StructuredTextEditor.java:1598)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4855)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:654)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:618)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1271)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3228)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:546)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:506)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:377)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:176)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 16:34:04.445
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:676)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:648)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:663)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$4(LanguageServiceAccessor.java:275)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:283)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:288)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
+	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
+	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:74)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant.lambda$0(ConnectDocumentToLanguageServerSetupParticipant.java:54)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 16:34:04.489
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:676)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:648)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:663)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$4(LanguageServiceAccessor.java:275)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:283)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:288)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
+	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:52)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:190)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:196)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:141)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:130)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jface.text.source.SourceViewer.ensureCodeMiningManagerInstalled(SourceViewer.java:1321)
+	at org.eclipse.jface.text.source.SourceViewer.setCodeMiningAnnotationPainter(SourceViewer.java:1340)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.showAnnotations(SourceViewerDecorationSupport.java:830)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.updateTextDecorations(SourceViewerDecorationSupport.java:301)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.install(SourceViewerDecorationSupport.java:269)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.createPartControl(AbstractDecoratedTextEditor.java:468)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor.createPartControl(StructuredTextEditor.java:1598)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4855)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:654)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:618)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1271)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3228)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:546)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:506)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:377)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:176)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 16:34:05.552
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:676)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:648)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:663)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$4(LanguageServiceAccessor.java:275)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:283)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:288)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
+	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
+	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
+	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
+	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
+	at org.eclipse.ui.internal.Workbench.updateActiveWorkbenchWindowMenuManager(Workbench.java:3213)
+	at org.eclipse.ui.internal.Workbench.lambda$0(Workbench.java:3195)
+	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:896)
+	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2178)
+	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1737)
+	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
+	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
+	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
+	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:787)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3236)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:546)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:506)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:377)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:176)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-20 16:34:47.350
+!MESSAGE Failed to fetch type data for element witn key: Ljava/lang/String;
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-10-20 16:34:47.350
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/view_thymeleaf
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/view_thymeleaf
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:56:05.120
+!MESSAGE Classpath changed for project: jwboot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:56:05.121
+!MESSAGE Boot project ADDED: jwboot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-20 16:56:05.749
+!MESSAGE Classpath changed for project: jwboot
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 17:03:29.776
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 17:03:30.965
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 17:03:30.971
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 19:12:51.957
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 19:14:05.043
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 19:29:56.180
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:46:01.269
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:46:02.291
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:46:02.297
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:46:02.305
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:46:15.417
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:46:15.417
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResolution(LSPCodeActionMarkerResolution.java:159)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.getResolutions(LSPCodeActionMarkerResolution.java:105)
+	at org.springframework.tooling.boot.ls.markers.LSPBootCodeActionMarkerResolution.getResolutions(LSPBootCodeActionMarkerResolution.java:25)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:318)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:277)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:154)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:46:24.591
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:47:32.620
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:47:36.651
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:47:48.313
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:47:58.470
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:00.437
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:03.238
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:04.473
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:06.062
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:07.510
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:09.478
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:11.597
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:46.159
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/ExamController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:49.490
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:48:51.275
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:49:04.515
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:49:04.665
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:49:04.670
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:49:04.673
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:49:05.831
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:49:44.406
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:49:46.401
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:52:48.623
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:55:46.365
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:55:49.299
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:55:51.116
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:59:51.799
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:59:58.021
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:59:58.179
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 22:59:58.183
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 22:59:58.186
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:04.567
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:06.205
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:09.458
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:14.184
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:14.948
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:20.275
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:20.841
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:44.617
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:00:52.398
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:01.007
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:02.583
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:05.439
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:10.693
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:11.871
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:18.983
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:22.537
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:24.819
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:40.011
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:41.513
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:42.584
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:45.307
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:46.551
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:01:48.739
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:02:00.914
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:19:56.647
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 23:29:58.609
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 23:29:58.664
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-20 23:29:58.669
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 23:30:08.477
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:149)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 23:30:09.480
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-10-20 23:30:11.288
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:149)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-20 23:30:11.314
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-10-21 05:15:58.648 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-21 05:16:01.560
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-21 05:16:07.180
+!MESSAGE Logback config file: D:\큐비트온&스페이스시엘\javaweb\springworks\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-10-21 05:16:07.882
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-10-21 05:16:07.882
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-10-21 05:16:08.218
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-10-21 05:16:08.218
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-21 05:16:15.059
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.25.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/큐비트온&스페이스시엘/javaweb/springworks/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1760991375058
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\sts-4.25.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:15.060
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-10-21 05:16:15.074
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 1248
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-21 05:16:15.958
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:17.973
+!MESSAGE Boot project ADDED: File-Message
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:17.973
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:17.975
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:17.997
+!MESSAGE Boot project ADDED: Language
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:18.086
+!MESSAGE Boot project ADDED: Members
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:18.140
+!MESSAGE Boot project ADDED: Members2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:18.207
+!MESSAGE Boot project ADDED: Members3(security)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:18.272
+!MESSAGE Boot project ADDED: Spring-JPA
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-10-21 05:16:18.411
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\LG'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-21 05:16:18.484
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-21 05:16:18.537
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:19.346
+!MESSAGE Boot project ADDED: ajax-test
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:19.346
+!MESSAGE Boot project ADDED: jwboot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:19.652
+!MESSAGE Boot project ADDED: rest-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-10-21 05:16:19.655
+!MESSAGE Boot project ADDED: view_thymeleaf
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:16:41.808
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-21 05:18:56.850
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:18:56.858
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:19:19.449
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam03Controller.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-21 05:19:29.708
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:19:29.716
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam03Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:19:30.955
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam03Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:22:12.625
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:29:43.172
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/exam/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:29:43.428
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/exam/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 05:29:43.485
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/exam/Exam02Controller.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-21 05:47:34.814
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-21 05:47:34.814
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-21 05:47:34.817
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-21 05:47:34.819
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-21 05:47:34.827
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-21 05:47:34.835
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-10-21 06:50:18.974
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 06:50:18.992
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/model/Ex02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 07:00:17.834
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/model/Ex02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 07:00:17.900
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/exam/Exam02Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 07:00:17.911
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/exam/Exam01Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 07:19:52.467
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/model/Ex03Controller.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-10-21 07:19:55.156
+!MESSAGE [Error]	Unexpected resource file:///D:/%ED%81%90%EB%B9%84%ED%8A%B8%EC%98%A8&%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%8B%9C%EC%97%98/javaweb/springworks/jwboot/src/main/java/com/springboot/controller/model/Ex03Controller.java

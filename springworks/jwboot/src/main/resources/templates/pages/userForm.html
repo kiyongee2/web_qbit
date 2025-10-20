@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>@ModelAttribute 입력 폼</title>
+</head>
+<body>
+    <h2>@ModelAttribute 입력 페이지</h2>
+
+    <form th:action="@{/login}" method="post">
+        <p>
+            ID: <input type="text" name="id" required>
+        </p>
+        <p>
+            PW: <input type="password" name="pw" required>
+        </p>
+        <p>
+            <button type="submit">전송</button>
+        </p>
+    </form>
+</body>
+</html>
+
+
+
