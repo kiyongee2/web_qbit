@@ -8,11 +8,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.springboot.dto.User;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Controller
 public class Ex03Controller {
+	
+	@GetMapping("/ex03")
+	public @ResponseBody User requestMethod() {
+		User user = User.builder()
+				.id("apple")
+				.pw("12345")
+				.build();	
+		return user;
+	}
 
 	// 입력 폼 페이지
     @GetMapping("/userForm")

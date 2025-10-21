@@ -11,7 +11,7 @@ import com.springboot.dto.MemberDTO;
 public class MemberRepository {
 	
 	private List<MemberDTO> list = new ArrayList<>();
-	private long sequence = 0L;
+	private Long sequence = 0L;
 	
 	//회원 등록
 	public MemberDTO save(MemberDTO dto) {
