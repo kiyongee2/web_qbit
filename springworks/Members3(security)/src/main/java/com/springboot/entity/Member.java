@@ -50,7 +50,7 @@ public class Member {
 		m.setName(dto.getName());
 		m.setGender(dto.getGender());
 		m.setJoinDate(new Timestamp(System.currentTimeMillis()));
-		m.setRole("ROLE_ADMIN");
+		m.setRole("ROLE_USER");
 		
 		return m;
 	}
