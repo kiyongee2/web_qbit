@@ -2,6 +2,8 @@ package com.springboot.entity;
 
 import java.sql.Timestamp;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import com.springboot.dto.MemberDTO;
 
 import jakarta.persistence.Column;
@@ -33,18 +35,18 @@ public class Member {
 	@Column(length=10)
 	private String gender;
 	
-	@Column
+	@CreationTimestamp
 	private Timestamp joinDate;
 	
-	//DTO를 Entity로 변환
+	//DTO를 Entity로 변환하는 메서드
 	public static Member toSaveEntity(MemberDTO dto) {
 		Member member = new Member();
 		member.setEmail(dto.getEmail());
 		member.setPasswd(dto.getPasswd());
 		member.setName(dto.getName());
 		member.setGender(dto.getGender());
-		member.setJoinDate(new Timestamp(System.currentTimeMillis()));
 		
 		return member;
 	}
 }
+

@@ -25,7 +25,6 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/members")
 @Controller
 public class MemberController {
-	
 	private final MemberService service;
 	
 	@GetMapping("/join") //회원 가입 페이지
@@ -53,13 +52,6 @@ public class MemberController {
 		return "member/list";
 	}
 	
-	/*@GetMapping
-	public String getMemberList(Model model) {
-		List<MemberDTO> memberDTOList = service.findAll();
-		model.addAttribute("memberList", memberDTOList);
-		return "member/list";
-	}*/
-	
 	@GetMapping("/{id}") //회원 정보(상세)
 	public String getMember(@PathVariable Long id, 
 							Model model) {
@@ -72,14 +64,7 @@ public class MemberController {
 			return "error/404";
 		} 
 	}
-	
-	/*@GetMapping("/{id}")
-	public String getMember(@PathVariable Long id, Model model) {
-		MemberDTO memberDTO = service.findById(id);
-		model.addAttribute("member", memberDTO);
-		return "member/info";
-	}*/
-	
+
 	 //회원 삭제
 	@GetMapping("/delete/{id}")
 	public String deleteMember(@PathVariable Long id) {
@@ -102,10 +87,10 @@ public class MemberController {
 			            RedirectAttributes ra) {
 		try {
 			MemberDTO member = service.login(email, passwd);
-			session.setAttribute("loginMember", member);
-			session.setAttribute("loginName", member.getName()); //이름 세션
-			ra.addFlashAttribute("msg", member.getName() + "님 환영합니다.");
-			return "redirect:/boards";
+			//세션 발급 - 이메일, 이름
+			session.setAttribute("loginEmail", member.getEmail()); 
+			session.setAttribute("loginName", member.getName()); 
+			return "redirect:/";
 		}catch(Exception e) {
 			ra.addFlashAttribute("error", e.getMessage());
 			return "redirect:/members/login";

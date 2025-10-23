@@ -8,9 +8,8 @@
 <body>
 	<section id="container">
 		<h2>회원 가입</h2>
-		
-		
-		<form th:action="@{/members/join}" method="post" class="joinForm">
+		<form th:action="@{/members/join}" method="post" 
+					class="joinForm">
 			<div th:if="${error}" class="error">
 			    [[${error}]]
 			</div>

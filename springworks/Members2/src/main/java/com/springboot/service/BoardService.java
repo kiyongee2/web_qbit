@@ -18,7 +18,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Service
 public class BoardService {
-	
 	private final BoardRepository repository;
 
 	//글쓰기
@@ -34,18 +33,32 @@ public class BoardService {
 		Sort order = Sort.by(Sort.Direction.DESC, "id");
 		return repository.findAll(order);
 	}
+	
+	//글 목록(페이지 처리)
+	public Page<Board> findAll(Pageable pageable) {
+		//pageable = PageRequest.of(0, 10); //오름차순
+		int page = pageable.getPageNumber() - 1;
+		int pageSize = 10;
+		
+		//브라우저 확인 - /boards/pages?page=3
+		pageable = PageRequest.of(page, pageSize, Sort.Direction.DESC, "id");
+		
+		return repository.findAll(pageable);
+	}
 
 	//글 상세 보기
 	public Board findById(Long id) {
 		return repository.findById(id)
 				.orElseThrow(() -> 
-					new IllegalArgumentException("해당 글이 존재하지 않습니다. ID=" + id));
+			new IllegalArgumentException("해당 글이 존재하지 않습니다. ID=" + id));
 	}
 
+	//글 삭제
 	public void delete(Long id) {
 		repository.deleteById(id);
 	}
 
+	//글 수정
 	public void update(BoardDTO dto) {
 		//1. 수정할 게시글 가져옴(수정 폼에서 id를 hidden으로 넘겨받음)
 		Board board = repository.findById(dto.getId())
@@ -62,18 +75,4 @@ public class BoardService {
 	public void updateHits(Long id) {
 		repository.updateHits(id);
 	}
-
-	//게시글(페이지)
-	public Page<Board> findAll(Pageable pageable) {
-		//pageable = PageRequest.of(0, 10); //오름차순
-		int page = pageable.getPageNumber() - 1;
-		int pageSize = 10;
-		
-		//브라우저 확인 - /boards/pages?page=3
-		pageable = PageRequest.of(page, pageSize, Sort.Direction.DESC, "id");
-		
-		return repository.findAll(pageable);
-	}
-
-
 }

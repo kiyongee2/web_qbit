@@ -1,28 +1,25 @@
 @charset "UTF-8";
 
+/* 공통 스타일 */
 #container{
 	width: 80%;
 	margin: 0 auto;
 }
+ul li{list-style: none; margin: 16px;}
+table thead{background-color: #eee;}
+button{padding: 5px 10px;}
+.msg{color: #00f; margin: 10px;}
+.error{color: #f00; margin: 10px;}
+
+/* index 스타일 */
 #main{text-align: center;}
 h2{
 	border-bottom: 2px solid #ccc;
 	padding: 16px;
 	text-align: center;
 }
-.main-pic img{
-	width: 40%;
-	border-radius: 8px;
-}
+.main-pic img{width: 40%; border-radius: 8px;}
 .menu{margin: 10px;}
-ul li{
-	list-style: none;
-	margin: 16px;
-}
-table thead{background-color: #eee;}
-.msg{color: #00f; margin: 10px;}
-.error{color: #f00; margin: 10px;}
-
 /* join 스타일 */
 .joinForm, .loginForm{
 	width: 400px; 
@@ -32,7 +29,6 @@ table thead{background-color: #eee;}
 	width: 80px;
 	float: left;
 }
-
 /* memberList 스타일  */
 .memberList, .boardList{
 	width: 600px;
@@ -54,29 +50,10 @@ table thead{background-color: #eee;}
 	width: 80px;
 	float: left;
 }
-.btnList{margin: 16px;}
-.btnList, button{padding: 5px 10px;}
+.btnInfo{margin: 16px;}
+.btnInfo a{text-decoration: none}
 
 /* boardList 스타일 */
-.btnWrite{
-	width: 500px; 
-	margin: 0 auto;
-	text-align: right;
-}
-.btnWrite button{padding: 8px 12px;}
-
-/* write 스타일 */
-.writeForm, .boardDetail, .boardUpdate{
-	width: 500px;
-	margin: 0 auto;
-}
-.writeForm ul, .boardDetail ul, .boardUpdate ul{padding-left: 0;}
-.wirteForm ul li{margin: 0;}
-.writeForm textarea, .boardDetail textarea, .boardUpdate textarea{
-	resize: none;
-	margin: 0;
-}
-
 .pagination{
 	margin: 10px;
 	text-align: center;
@@ -85,4 +62,27 @@ table thead{background-color: #eee;}
 	padding: 4px;
 	text-decoration: none;
 }
+
+/* write 스타일 */
+.btnWrite{
+	width: 500px; 
+	margin: 0 auto;
+	text-align: right;
+}
+.btnWrite button{padding: 8px 12px;}
+
+.writeForm, .boardDetail, .boardUpdate{
+	width: 500px;
+	margin: 0 auto;
+}
+.writeForm ul, .boardDetail ul, 
+.boardUpdate ul{padding-left: 0;}
+.wirteForm ul li{margin: 0;}
+
+.writeForm textarea, .boardDetail textarea, 
+.boardUpdate textarea{
+	resize: none;
+	margin: 0;
+}
+
 

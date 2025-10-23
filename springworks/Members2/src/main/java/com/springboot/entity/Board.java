@@ -2,6 +2,8 @@ package com.springboot.entity;
 
 import java.sql.Timestamp;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import com.springboot.dto.BoardDTO;
 
 import jakarta.persistence.Column;
@@ -32,16 +34,16 @@ public class Board {
 	@Column(columnDefinition = "Integer default 0")
 	private Integer hits;        //조회수
 	
+	@CreationTimestamp
 	private Timestamp regDate; //작성일
 	
-	//Entity에 DTO 저장
+	//Entity에 DTO 저장 메서드
 	public static Board toSaveEntity(BoardDTO dto) {
 		Board board = new Board();
 		board.setTitle(dto.getTitle());
 		board.setContent(dto.getContent());
 		board.setWriter(dto.getWriter());
 		board.setHits(0);
-		board.setRegDate(new Timestamp(System.currentTimeMillis()));
 		
 		return board;
 	}

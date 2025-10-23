@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 public class BoardDTO {
-	private Long id;        //글번호
+	private Long id;  //글번호
 	
 	@NotEmpty(message="제목은 필수 항목입니다.")
 	private String title;   //글제목
@@ -21,3 +21,4 @@ public class BoardDTO {
 	
 	private Timestamp regDate; //작성일
 }
+

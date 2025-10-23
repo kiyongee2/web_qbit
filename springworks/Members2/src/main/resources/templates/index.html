@@ -2,23 +2,28 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>회원 정보 없음</title>
+<title>Welcome~</title>
 <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 	<section id="container">
 		<div id="main">
-		    <!-- 메시지 출력 영역 -->
-			<h2>Good Mall - 여러분의 마켓</h2>
-			<div th:if="${msg}" class="msg">
-			    [[${msg}]]
-			</div>
+			<h2>Good Releation - 좋은 사이</h2>
 			<div class="main-pic">
-				<img alt="점포" th:src="@{/images/store.png}">
+				<img alt="점포" th:src="@{/images/time.jpg}">
 			</div>
 			<div class="menu">
+			   <th:block th:if="${session.loginEmail}">
+					<span style="color: blue" 
+					      th:text="'[' + ${session.loginName} + '님]'"></span>
+					<a th:href="@{/members/logout}" th:text='로그아웃'></a> | 
+				</th:block>
+				<th:block th:unless="${session.loginEmail}">
+					<a th:href="@{/members/login}" th:text='로그인'></a> |
+				</th:block>
+				
 				<a th:href="@{/members/join}">회원 가입</a> |
-				<a th:href="@{/members/login}">로그인</a> |
+				<a th:href="@{/members}">회원 목록</a> |
 				<a th:href="@{/boards/pages}">게시판</a>
 			</div>
 		</div>

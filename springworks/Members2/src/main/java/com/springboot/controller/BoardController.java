@@ -27,7 +27,6 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("/boards")
 @Controller
 public class BoardController {
-	
 	private final BoardService service;
 	
 	//글쓰기 페이지
@@ -71,7 +70,8 @@ public class BoardController {
 		//시작 번호 -   1, 11, 21...
 		//예) 번호 - 13,  13/10-1.3 -> 2(올림)-1 * 10 + 1 => 11
 		int startPage 
-			= ((int)Math.ceil((double)pageable.getPageNumber() / blockLimit)-1) * blockLimit+1;
+			= ((int)Math.ceil((double)pageable.getPageNumber() / blockLimit)-1) 
+				* blockLimit + 1;
 		//페이지의 행번호(끝) 10, 20, 30...
 		//int endPage = startPage + blockLimit - 1;
 		int endPage = (startPage + blockLimit - 1) > boardList.getTotalPages() ?

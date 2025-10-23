@@ -7,9 +7,9 @@
 </head>
 <body>
 	<script th:inline="javascript">
-	    // 세션의 loginMember가 비어있는지 확인
-	    let loginMember = [[${session.loginMember}]];
-	    if (!loginMember) {
+	    // 세션이 없으면 로그인 요청
+	    let loginEmail = [[${session.loginEmail}]];
+	    if (!loginEmail) {
 	        alert("로그인이 필요합니다.");
 	        location.href = "/members/login";
 	    }
@@ -17,6 +17,7 @@
 	
 	<section id="container">
 		<h2>글쓰기</h2>
+		<!-- validation -->
 		<form th:action="@{/boards/write}" method="post" class="writeForm"
 				th:object="${boardDTO}">
 			<div th:if="${#fields.hasAnyErrors()}">
