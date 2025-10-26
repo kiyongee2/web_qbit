@@ -54,6 +54,12 @@ h2{
 .btnInfo a{text-decoration: none}
 
 /* boardList 스타일 */
+.searchForm{
+	width:550px;
+	margin: 0 auto;
+	text-align: right;
+}
+.searchForm select{padding: 2px;}
 .pagination{
 	margin: 10px;
 	text-align: center;

@@ -70,7 +70,7 @@ public class BookRepository {
 		Book bookInfo = null;
 		for(int i = 0; i < listOfBooks.size(); i++) {
 			Book book = listOfBooks.get(i);
-			if(book.getBookId().equals(bookId)) {
+			if(book != null && book.getBookId().equals(bookId)) {
 				bookInfo = book;
 				break;
 			}

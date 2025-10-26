@@ -2,6 +2,8 @@ package com.springboot.dto;
 
 import java.sql.Timestamp;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import com.springboot.entity.Member;
 
 import lombok.Getter;

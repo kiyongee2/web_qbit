@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.springboot.domain.Book;
+import com.springboot.exception.CategoryException;
 import com.springboot.service.BookService;
 
 @RequestMapping("/books")
@@ -46,6 +47,9 @@ public class BookController {
 	public String requestBooksByCategory(@PathVariable("category") String bookCategory,
 			Model model) {
 		List<Book> booksByCategory = bookService.getBookListByCategory(bookCategory);
+		if(booksByCategory == null || booksByCategory.isEmpty()) {
+			throw new CategoryException();
+		}
 		model.addAttribute("bookList", booksByCategory);
 		return "books";
 	}

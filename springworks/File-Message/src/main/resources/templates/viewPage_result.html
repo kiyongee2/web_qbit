@@ -5,11 +5,14 @@
 <title>file upload</title>
 </head>
 <body>
-	<h3 th:text="${data1}">파일 업로드</h3>
+	<h3 th:text="${data1}"></h3>
 	<p>실제 파일 이름: <span th:text="${data2}"></span>
 	<p>서버 파일 이름: <span th:text="${data3}"></span>
 	<p>
-		<img th:src="'/images/'+ ${data3}" style="width: 15%">
+		<img th:src="@{|/images/${data3}|}" style="width: 20%">
+		<!-- 
+			<img th:src="@{'/images/'+ ${data3}}" style="width: 20%">
+		 -->
 	</p>
 </body>
 </html>

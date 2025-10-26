@@ -1,12 +1,18 @@
 package com.springboot.service;
 
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.springboot.dto.BoardDTO;
 import com.springboot.entity.Board;
@@ -14,7 +20,9 @@ import com.springboot.repository.BoardRepository;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @RequiredArgsConstructor
 @Service
 public class BoardService {
@@ -22,7 +30,30 @@ public class BoardService {
 
 	//글쓰기
 	public void save(BoardDTO dto) {
-		Board board = Board.toSaveEntity(dto);
+		MultipartFile file = dto.getUploadFile();
+		String originalFilename = null;
+		String storedFilename = null;
+		
+		if(file != null && !file.isEmpty()) {
+			originalFilename = file.getOriginalFilename();
+			String uuid = UUID.randomUUID().toString(); 
+			storedFilename = uuid + originalFilename;
+			
+			//폴더가 없으면 자동 생성
+			File uploadDir = new File("c:/upload");
+			if (!uploadDir.exists()) uploadDir.mkdirs(); 
+			
+			try {
+				file.transferTo(new File(uploadDir, storedFilename));
+			} catch (IOException e) {
+				e.printStackTrace();
+				throw new RuntimeException("파일 업로드 실패!!");
+			}
+		}
+		
+		// Entity 변환 후 DB 저장
+		Board board 
+			= Board.toSaveEntity(dto, originalFilename, storedFilename);
 		repository.save(board);
 	}
 
@@ -40,17 +71,48 @@ public class BoardService {
 		int page = pageable.getPageNumber() - 1;
 		int pageSize = 10;
 		
+		log.info("--> pageable.getPageNumber(): " + pageable.getPageNumber());
 		//브라우저 확인 - /boards/pages?page=3
 		pageable = PageRequest.of(page, pageSize, Sort.Direction.DESC, "id");
 		
-		return repository.findAll(pageable);
+		Page<Board> boardList = repository.findAll(pageable);
+		//getNumber는 pageNumber 보다 1작음
+		log.info("--> boardList.getNumber(): " + boardList.getNumber());
+		
+		return boardList;
 	}
-
+	
 	//글 상세 보기
 	public Board findById(Long id) {
 		return repository.findById(id)
 				.orElseThrow(() -> 
 			new IllegalArgumentException("해당 글이 존재하지 않습니다. ID=" + id));
+	}
+	 
+	//글 목록(제목 검색 및 페이지 처리)
+	public Page<Board> findByTitleContaining(String keyword, Pageable pageable) {
+		int page = pageable.getPageNumber() - 1;
+		int pageSize = 10;
+		
+		pageable = PageRequest.of(page, pageSize, Sort.Direction.DESC, "id");
+		
+		Page<Board> boardList =
+				repository.findByTitleContaining(keyword, pageable);
+		
+		return boardList;
+	}
+	
+	//글 목록(제목 및 내용 검색, 페이지 처리)
+	public Page<Board> findByContentContaining(String keyword, Pageable pageable) {
+		int page = pageable.getPageNumber() - 1;
+		int pageSize = 10;
+		
+		pageable = PageRequest.of(page, pageSize, Sort.Direction.DESC, "id");
+		
+		Page<Board> boardList =
+				repository.findByContentContaining(keyword, pageable);
+		
+		return boardList;
 	}
 
 	//글 삭제

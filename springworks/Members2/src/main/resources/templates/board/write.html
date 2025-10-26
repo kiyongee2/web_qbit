@@ -18,8 +18,8 @@
 	<section id="container">
 		<h2>글쓰기</h2>
 		<!-- validation -->
-		<form th:action="@{/boards/write}" method="post" class="writeForm"
-				th:object="${boardDTO}">
+		<form th:action="@{/boards/write}" method="post" th:object="${boardDTO}"
+				 enctype="multipart/form-data" class="writeForm">
 			<div th:if="${#fields.hasAnyErrors()}">
 			    <div th:each="err : ${#fields.allErrors()}"
 			         th:text="${err}" class="error"></div>
@@ -33,6 +33,9 @@
 					<li>
 						<textarea rows="8" cols="60" th:field="*{content}"
 							    placeholder="내용"></textarea>
+					</li>
+					<li>
+						<input type="file" name="uploadFile">
 					</li>
 					<li>
 						<input type="text" name="writer" size=62

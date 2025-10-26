@@ -2,6 +2,8 @@ package com.springboot.dto;
 
 import java.sql.Timestamp;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
@@ -18,6 +20,8 @@ public class BoardDTO {
 	private String writer;  //글쓴이
 	
 	private Integer hits;   //조회수
+	
+	private MultipartFile uploadFile; //업로드 파일
 	
 	private Timestamp regDate; //작성일
 }

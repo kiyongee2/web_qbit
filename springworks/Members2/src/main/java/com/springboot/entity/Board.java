@@ -34,16 +34,23 @@ public class Board {
 	@Column(columnDefinition = "Integer default 0")
 	private Integer hits;        //조회수
 	
+	private String originalFilename; //실제 파일명
+	
+	private String storedFilename;   //서버에 저장된 파일명
+	
 	@CreationTimestamp
 	private Timestamp regDate; //작성일
 	
 	//Entity에 DTO 저장 메서드
-	public static Board toSaveEntity(BoardDTO dto) {
+	public static Board toSaveEntity(BoardDTO dto,
+			String originalFilename, String storedFilename) {
 		Board board = new Board();
 		board.setTitle(dto.getTitle());
 		board.setContent(dto.getContent());
 		board.setWriter(dto.getWriter());
 		board.setHits(0);
+		board.setOriginalFilename(originalFilename);
+		board.setStoredFilename(storedFilename);
 		
 		return board;
 	}
