@@ -178,17 +178,15 @@ public class BoardController {
 			@PageableDefault(page=1) Pageable pageable,
 			Model model) {
 		try {
-			//조회수 증가
-			service.updateHits(id);
+			service.updateHits(id); //조회수 증가
 			
-			//글 상세 보기
-			Board board = service.findById(id);
+			Board board = service.findById(id); //글 상세 보기
 			model.addAttribute("board", board);
 			model.addAttribute("page", pageable.getPageNumber());
 			return "board/detail";
 		}catch(Exception e) {
 			model.addAttribute("errorMsg", e.getMessage());
-			return "error/404.html";
+			return "error/errorPage";
 		}
 	}
 	

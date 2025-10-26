@@ -45,7 +45,7 @@ public class BoardController {
 			return "board/write";
 		}
 		service.save(dto);
-		return "redirect:/boards";
+		return "redirect:/boards/pages";
 	}
 	
 	//글 목록

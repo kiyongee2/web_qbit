@@ -62,7 +62,7 @@ public class MemberController {
 			return "member/info";
 		}catch(IllegalArgumentException e) {
 			model.addAttribute("errorMsg", e.getMessage());
-			return "error/404";
+			return "error/errorPage";
 		} 
 	}
 

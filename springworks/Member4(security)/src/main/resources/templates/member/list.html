@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+<meta charset="UTF-8">
+<title>Welcome~</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<section id="container">
+		<h2>회원 목록</h2>
+		<div sec:authorize="isAuthenticated()" class="auth">
+	   	 <!--  <h3 th:text="${#authentication}"></h3> -->
+	   	 <h3 th:text="${#authentication.principal.id}"></h3>
+	   	 <h3 th:text="${#authentication.principal.name}"></h3>
+	   </div>
+		<table class="memberList">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>이메일</th>
+					<th>이름</th>
+					<th>성별</th>
+					<th>권한</th>
+					<th>가입일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="m: ${memberList}">
+					<td th:text="${m.id}"></td>
+					<td>
+						<a th:href="@{/members/{id}(id=${m.id})}" th:text="${m.email}"></a>
+					</td>
+					<td th:text="${m.name}"></td>
+					<td th:text="${m.gender}"></td>
+					<td th:text="${m.role}"></td>
+					<td th:text="${#dates.format(m.joinDate, 'yyyy-MM-dd HH:mm')}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</body>
+</html>
