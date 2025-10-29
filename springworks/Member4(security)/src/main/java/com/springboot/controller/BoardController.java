@@ -150,18 +150,25 @@ public class BoardController {
 		}
 		
 		//하단의 페이지 블럭
-		int blockLimit = 10;
-		
-		//시작 페이지 - 1, 2, 3...
-		//시작 번호 -   1, 11, 21...
-		//예) 번호 - 13,  13/10-1.3 -> 2(올림)-1 * 10 + 1 => 11
-		int startPage 
-			= ((int)Math.ceil((double)pageable.getPageNumber() / blockLimit)-1) 
+		int blockLimit = 10; //1 2 3 ... 10 (10페이지까지 보이기)
+		//페이지 블럭의 시작 번호 -  1, 11, 21
+		//예)페이지 번호 - 13,  13/10=1.3-> 2(올림)-1 * 10 + 1 => 11 (11 ~ 20 블럭)
+		int startPage = 
+				((int)Math.ceil((double)pageable.getPageNumber() / blockLimit) - 1)
 				* blockLimit + 1;
-		//페이지의 행번호(끝) 10, 20, 30...
-		//int endPage = startPage + blockLimit - 1;
-		int endPage = (startPage + blockLimit - 1) > boardList.getTotalPages() ?
-				boardList.getTotalPages() : (startPage + blockLimit - 1);
+		
+		//페이지 블럭의 끝번호 - 10, 20, 30
+		//int endPage = startPage + blockLimit - 1  (
+
+		/*int endPage = (startPage + blockLimit - 1) > boardList.getTotalPages() ?
+				boardList.getTotalPages() : (startPage + blockLimit - 1);*/
+		
+		int endPage = Math.min(startPage + blockLimit - 1, boardList.getTotalPages());
+		
+		log.info("startPage: " + startPage);
+		log.info("pageable.getPageNumber(): " + pageable.getPageNumber());
+		log.info("endPage: " + endPage);
+		log.info("boardList.getTotalPages(): " + boardList.getTotalPages());
 		
 		model.addAttribute("boardList", boardList);
 		model.addAttribute("startPage", startPage);

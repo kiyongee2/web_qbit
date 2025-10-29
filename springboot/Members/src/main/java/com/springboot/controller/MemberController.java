@@ -36,11 +36,8 @@ public class MemberController {
 	@PostMapping("/join")  //회원 가입 처리
 	public String join(@ModelAttribute MemberDTO dto,
 			RedirectAttributes ra) {
-		//System.out.println("아이디: " + mid); //@RequestParam("mid") 테스트하기
-		//System.out.println("memberDTO: " + dto);
 		try {
 			service.save(dto);
-			ra.addFlashAttribute("msg", "회원가입 성공!");
 			return "redirect:/members/login";
 		}catch(Exception e) {
 			ra.addFlashAttribute("error", e.getMessage());
@@ -55,12 +52,11 @@ public class MemberController {
 		return "member/list";
 	}
 	
-	/*@GetMapping
-	public String getMemberList(Model model) {
-		List<MemberDTO> memberDTOList = service.findAll();
-		model.addAttribute("memberList", memberDTOList);
-		return "member/list";
-	}*/
+	//로그인 페이지
+	@GetMapping("/login")
+	public String loginForm() {
+		return "member/login";
+	}
 	
 	@GetMapping("/{id}") //회원 정보(상세)
 	public String getMember(@PathVariable Long id, 
@@ -75,24 +71,11 @@ public class MemberController {
 		} 
 	}
 	
-	/*@GetMapping("/{id}")
-	public String getMember(@PathVariable Long id, Model model) {
-		MemberDTO memberDTO = service.findById(id);
-		model.addAttribute("member", memberDTO);
-		return "member/info";
-	}*/
-	
-	 //회원 삭제
+	//회원 삭제
 	@GetMapping("/delete/{id}")
 	public String deleteMember(@PathVariable Long id) {
 		service.delete(id);
 		return "redirect:/members";
-	}
-	
-	//로그인 페이지
-	@GetMapping("/login")
-	public String loginForm() {
-		return "member/login";
 	}
 }
 

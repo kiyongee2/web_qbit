@@ -11,11 +11,7 @@
 		<table class="memberList">
 			<thead>
 				<tr>
-					<th>번호</th>
-					<th>이메일</th>
-					<th>이름</th>
-					<th>성별</th>
-					<th>가입일</th>
+					<th>번호</th><th>이메일</th><th>이름</th><th>성별</th><th>권한</th><th>가입일</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -26,6 +22,7 @@
 					</td>
 					<td th:text="${m.name}"></td>
 					<td th:text="${m.gender}"></td>
+					<td th:text="${m.role}"></td>
 					<td th:text="${#dates.format(m.joinDate, 'yyyy-MM-dd HH:mm')}"></td>
 				</tr>
 			</tbody>

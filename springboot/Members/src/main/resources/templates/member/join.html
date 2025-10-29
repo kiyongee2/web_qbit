@@ -8,9 +8,8 @@
 <body>
 	<section id="container">
 		<h2>회원 가입</h2>
-		
-		
-		<form th:action="@{/members/join}" method="post" class="joinForm">
+		<form th:action="@{/members/join}" method="post" 
+					class="joinForm">
 			<div th:if="${error}" class="error">
 			    [[${error}]]
 			</div>
@@ -18,7 +17,7 @@
 				<ul>
 					<li>
 						<label for="email">이메일</label>
-						<input type="text" name="email">
+						<input type="text" name="email" required>
 					</li>
 					<li>
 						<label for="mid">비밀번호</label>

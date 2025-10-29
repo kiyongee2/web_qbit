@@ -8,22 +8,20 @@
 <body>
 	<section id="container">
 		<h2>로그인</h2>
-		<form th:action="@{/members/login}" method="post" class="loginForm">
-		    <div th:if="${msg}" class="msg">
-			    [[${msg}]]
-			</div>
-			<div th:if="${error}" class="error">
-			    [[${error}]]
-			</div>
+		<!-- 로그인 실패 시 에러 메시지 출력 -->
+		<form th:action="@{/login}" method="post" class="loginForm">
+			<div th:if="${param.error}" class="error">
+		        아이디 또는 비밀번호가 일치하지 않습니다.
+		    </div>
 			<fieldset>
 				<ul>
 					<li>
 						<label for="email">이메일</label>
-						<input type="text" name="email">
+						<input type="text" name="username">
 					</li>
 					<li>
 						<label for="mid">비밀번호</label>
-						<input type="password" name="passwd">
+						<input type="password" name="password">
 					</li>
 					<li>
 						<input type="submit" value="로그인">

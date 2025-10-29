@@ -1,20 +1,16 @@
 @charset "UTF-8";
 
+/* 공통 스타일 */
 #container{
 	width: 80%;
 	margin: 0 auto;
 }
-#main{text-align: center;}
 h2{
 	border-bottom: 2px solid #ccc;
 	padding: 16px;
 	text-align: center;
 }
-.main-pic img{
-	width: 40%;
-	border-radius: 8px;
-}
-.menu{margin: 10px;}
+a{text-decoration: none;}
 ul li{
 	list-style: none;
 	margin: 16px;
@@ -22,6 +18,14 @@ ul li{
 table thead{background-color: #eee;}
 .msg{color: #00f; margin: 10px;}
 .error{color: #f00; margin: 10px;}
+
+/* index 스타일 */
+#main{text-align: center;}
+.main-pic img{
+	width: 40%;
+	border-radius: 8px;
+}
+.menu{margin: 10px;}
 
 /* join 스타일 */
 .joinForm, .loginForm{

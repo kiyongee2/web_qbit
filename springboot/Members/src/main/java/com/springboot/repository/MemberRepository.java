@@ -8,6 +8,7 @@ import com.springboot.entity.Member;
 
 public interface MemberRepository extends JpaRepository<Member, Long>{
 
-	//쿼리 메서드 - 메서드 이름이 쿼리임
+	//이메일을 찾아서 Member를 반환하는 메서드
 	Optional<Member> findByEmail(String email);
 }
+
