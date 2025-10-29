@@ -9,26 +9,27 @@
 	<section id="container">
 		<h2>회원 가입</h2>
 		<form th:action="@{/members/join}" method="post" 
-					class="joinForm">
-			<div th:if="${error}" class="error">
-			    [[${error}]]
+				th:object="${memberDTO}" class="joinForm">
+			<div th:if="${#fields.hasAnyErrors()}" class="error">
+			    <div th:each="err : ${#fields.allErrors()}"
+			    	 th:text="${err}"></div>
 			</div>
 			<fieldset>
 				<ul>
 					<li>
 						<label for="email">이메일</label>
-						<input type="text" name="email">
+						<input type="text" name="email" th:value="${email}">
 					</li>
 					<li>
-						<label for="mid">비밀번호</label>
-						<input type="password" name="passwd">
+						<label for="passwd">비밀번호</label>
+						<input type="password" name="passwd" th:value="${passwd}">
 					</li>
 					<li>
-						<label for="mid">이름</label>
-						<input type="text" name="name">
+						<label for="name">이름</label>
+						<input type="text" name="name" th:value="${name}">
 					</li>
 					<li>
-						<label for="mid">성별</label>
+						<label for="gender">성별</label>
 						<input type="radio" name="gender" value="남자" checked>남
 						<input type="radio" name="gender" value="여자">여
 					</li>

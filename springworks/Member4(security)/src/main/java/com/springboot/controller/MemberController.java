@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import com.springboot.entity.Member;
 import com.springboot.service.MemberService;
 
 import jakarta.servlet.http.HttpSession;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
@@ -28,23 +30,36 @@ public class MemberController {
 	private final MemberService service;
 	
 	@GetMapping("/join") //회원 가입 페이지
-	public String joinForm() {
+	public String joinForm(MemberDTO memberDTO) {
 		return "member/join";
 	}
 	
+	//유효성 검사
 	@PostMapping("/join")  //회원 가입 처리
+	public String join(@Valid MemberDTO dto,
+			BindingResult bindingResult,
+			RedirectAttributes ra) {
+		if(bindingResult.hasErrors()) {
+			return "member/join";
+		}
+
+		service.save(dto);
+		return "redirect:/members/login";
+	}
+	
+	/*@PostMapping("/join")  //회원 가입 처리
 	public String join(@ModelAttribute MemberDTO dto,
 			RedirectAttributes ra) {
-		//리다이렉트시에 메시지 전달
 		try {
 			service.save(dto);
+			//리다이렉트시에 메시지 전달
 			ra.addFlashAttribute("msg", "회원가입 성공!");
 			return "redirect:/members/login";
 		}catch(Exception e) {
 			ra.addFlashAttribute("error", e.getMessage());
 			return "redirect:/members/join";
 		}
-	}
+	}*/
 	
 	@GetMapping  //회원 목록
 	public String getMemberList(Model model) {

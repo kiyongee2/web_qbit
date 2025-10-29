@@ -3,7 +3,7 @@ package com.springboot.controller.exception;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.springboot.config.UserException;
+import com.springboot.exceptions.UserException;
 
 @Controller
 public class Exception02Controller {

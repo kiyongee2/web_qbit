@@ -6657,3 +6657,276 @@ org.eclipse.core.runtime.CoreException: Launch configuration BoardRepositoryTest
 2025-10-27 07:30:16,437 [Worker-66: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
 2025-10-27 07:30:16,443 [Worker-66: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members2\src\test\resources
 2025-10-27 07:30:51,357 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-10-27 18:29:25,091 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-10-27 18:58:07,642 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409 [359])
+2025-10-27 18:58:07,647 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409
+2025-10-27 18:58:07,648 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\aopalliance-1.0.jar
+2025-10-27 18:58:07,648 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\guice-5.1.0.jar
+2025-10-27 18:58:07,648 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpclient-4.5.14.jar
+2025-10-27 18:58:07,648 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpcore-4.4.16.jar
+2025-10-27 18:58:07,648 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jansi-2.4.1.jar
+2025-10-27 18:58:07,648 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jcl-over-slf4j-1.7.36.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-artifact-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-builder-support-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-compat-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-core-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-embedder-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-builder-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-plugin-api-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-repository-metadata-3.9.9.jar
+2025-10-27 18:58:07,649 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-api-1.9.22.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-connector-basic-1.9.22.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-impl-1.9.22.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-named-locks-1.9.22.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-provider-3.9.9.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-spi-1.9.22.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-file-1.9.22.jar
+2025-10-27 18:58:07,650 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-http-1.9.22.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-wagon-1.9.22.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-util-1.9.22.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-3.9.9.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-builder-3.9.9.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-shared-utils-3.4.2.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2025-10-27 18:58:07,652 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-0.0.7.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-1.2.0.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-cipher-2.0.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-classworlds-2.8.0.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-component-annotations-2.1.0.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-interpolation-1.27.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-sec-dispatcher-2.0.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-utils-3.5.1.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-xml-3.0.1.jar
+2025-10-27 18:58:07,653 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-file-3.5.3.jar
+2025-10-27 18:58:07,654 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-3.5.3.jar
+2025-10-27 18:58:07,654 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-shared-3.5.3.jar
+2025-10-27 18:58:07,654 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-provider-api-3.5.3.jar
+2025-10-27 18:58:07,657 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.3.0.jre [29])
+2025-10-27 18:58:07,657 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\com.google.guava_33.3.0.jre.jar
+2025-10-27 18:58:07,657 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.16 [592])
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\slf4j.api_2.0.16.jar
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [45])
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [41])
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\jakarta.annotation-api_1.3.5.jar
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [77])
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.apache.commons.cli_1.9.0.jar
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [80])
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-10-27 18:58:07,658 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [30])
+2025-10-27 18:58:07,659 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\sts-4.25.0.RELEASE\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-10-27 18:58:07,661 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\큐비트온&스페이스시엘\javaweb\springworks\Members2":
+2025-10-27 18:58:07,666 [Worker-7: Launching Executing install in D__큐비트온_스페이스시엘_javaweb_springworks_Members2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -Ppom.xml -B -Dstyle.color=always install
+2025-10-27 18:58:48,436 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:48,460 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2025-10-27 18:58:48,473 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\File-Message\src\test\resources
+2025-10-27 18:58:49,664 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:49,674 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2025-10-27 18:58:49,679 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Language\src\test\resources
+2025-10-27 18:58:51,381 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:51,399 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-27 18:58:51,635 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 18:58:53,049 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:53,070 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 12 resources from src\main\resources to target\classes
+2025-10-27 18:58:53,199 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members\src\test\resources
+2025-10-27 18:58:53,855 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:53,872 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2025-10-27 18:58:54,046 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members2\src\test\resources
+2025-10-27 18:58:55,161 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:55,177 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 13 resources from src\main\resources to target\classes
+2025-10-27 18:58:55,310 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members3(security)\src\test\resources
+2025-10-27 18:58:56,326 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:56,344 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2025-10-27 18:58:56,351 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Spring-JPA\src\test\resources
+2025-10-27 18:58:57,425 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:57,450 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:57,461 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Spring-JPA2\src\test\resources
+2025-10-27 18:58:58,646 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:58,662 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 9 resources from src\main\resources to target\classes
+2025-10-27 18:58:58,762 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\ajax-test\src\test\resources
+2025-10-27 18:58:59,739 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:58:59,756 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 18:58:59,827 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 18:59:00,935 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:59:00,952 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:59:00,957 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\rest-api\src\test\resources
+2025-10-27 18:59:01,714 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 18:59:01,727 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2025-10-27 18:59:01,784 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\view_thymeleaf\src\test\resources
+2025-10-27 19:18:39,849 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-10-27 19:23:38,132 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 19:23:38,167 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 19:23:38,184 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 21:55:46,957 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 21:55:46,966 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 21:55:46,973 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 21:56:00,474 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 21:56:00,480 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 21:56:00,485 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 21:59:00,383 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 21:59:00,390 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 21:59:00,401 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:02:20,019 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:02:20,026 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:02:20,032 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:14:12,704 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:14:12,719 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-27 22:14:12,726 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 22:15:38,323 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:15:38,328 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-27 22:15:38,334 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 22:18:22,117 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:18:22,125 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-27 22:18:22,128 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 22:18:58,134 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:18:58,138 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-27 22:18:58,140 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 22:21:23,686 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:21:23,695 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-27 22:21:23,705 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 22:22:08,778 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:22:08,782 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-27 22:22:08,787 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-27 22:27:00,404 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:27:00,411 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:27:00,418 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:28:16,732 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:28:16,738 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:28:16,746 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:38:28,524 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:38:28,532 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:38:28,542 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:39:14,856 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:39:14,863 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:39:14,873 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:42:20,909 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:42:20,915 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:42:20,921 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-27 22:46:45,725 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-27 22:46:45,730 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources from src\main\resources to target\classes
+2025-10-27 22:46:45,740 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\jwboot\src\test\resources
+2025-10-28 04:50:17,998 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-10-28 04:53:18,100 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 04:53:18,124 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 04:53:18,136 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 04:56:11,656 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 04:56:11,663 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 04:56:11,671 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:17:36,901 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:17:36,908 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:17:36,919 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:25:31,539 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:25:31,545 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:25:31,554 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:25:52,656 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:25:52,658 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:25:52,666 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:27:34,375 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:27:34,383 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:27:34,391 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:30:18,278 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:30:18,286 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:30:18,296 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:32:02,573 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:32:02,581 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:32:02,590 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:33:23,719 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:33:23,723 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:33:23,730 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:35:57,465 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:35:57,472 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:35:57,478 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:36:56,160 [Worker-18: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:36:56,164 [Worker-18: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 18 resources from src\main\resources to target\classes
+2025-10-28 05:36:56,173 [Worker-18: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:38:12,963 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:38:12,980 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2025-10-28 05:38:12,992 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members2\src\test\resources
+2025-10-28 05:39:03,437 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:39:03,441 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 18 resources from src\main\resources to target\classes
+2025-10-28 05:39:03,447 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:41:05,139 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:41:05,147 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 18 resources from src\main\resources to target\classes
+2025-10-28 05:41:05,155 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:44:47,982 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:44:47,988 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 18 resources from src\main\resources to target\classes
+2025-10-28 05:44:47,995 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:45:18,089 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:45:18,092 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:45:18,096 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:45:53,578 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:45:53,583 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-28 05:45:53,591 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:54:01,330 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:54:01,332 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:54:01,336 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:56:47,555 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:56:47,557 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:56:47,560 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:58:10,639 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:58:10,640 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:58:10,644 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 05:59:22,224 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 05:59:22,225 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 05:59:22,228 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 06:01:09,732 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 06:01:09,735 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 06:01:09,739 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-28 06:43:44,742 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-10-28 06:44:30,239 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 06:44:30,256 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2025-10-28 06:44:30,265 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members2\src\test\resources
+2025-10-28 06:44:50,101 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-28 06:44:50,117 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-28 06:44:50,124 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Members2\src\test\resources
+2025-10-29 05:46:12,352 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-10-29 05:48:10,332 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 05:48:10,350 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 05:48:10,472 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 05:58:25,194 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 05:58:25,200 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 05:58:25,207 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 05:58:50,841 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 05:58:50,848 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 05:58:50,857 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 05:59:04,908 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 05:59:04,922 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 05:59:04,929 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:01:55,396 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:01:55,404 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 06:01:55,412 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:03:48,230 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 06:03:48,234 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:03:48,241 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:04:15,629 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:04:15,633 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 06:04:15,639 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:05:49,160 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:05:49,165 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 06:05:49,171 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:06:33,947 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:06:33,951 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 06:06:33,956 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:06:56,266 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 06:06:56,268 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:06:56,272 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:07:11,848 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:07:11,854 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 06:07:11,864 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:11:08,854 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:11:08,871 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 17 resources from src\main\resources to target\classes
+2025-10-29 06:11:08,882 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:13:44,638 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 06:13:44,640 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:13:44,644 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:18:45,752 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 06:18:45,753 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:18:45,758 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:23:43,927 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 06:23:43,929 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:23:43,933 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources
+2025-10-29 06:25:54,655 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-10-29 06:25:54,657 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-10-29 06:25:54,660 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\큐비트온&스페이스시엘\javaweb\springworks\Member4(security)\src\test\resources

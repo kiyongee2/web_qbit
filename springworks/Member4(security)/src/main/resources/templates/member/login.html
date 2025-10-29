@@ -8,8 +8,11 @@
 <body>
 	<section id="container">
 		<h2>로그인</h2>
-		<form th:action="@{/perform_login}" method="post" class="loginForm">
-		    <div th:if="${param.error}" class="error"></div>
+		<!-- 로그인 실패 시 에러 메시지 출력 -->
+		<form th:action="@{/login}" method="post" class="loginForm">
+			<div th:if="${param.error}" class="error">
+		        아이디 또는 비밀번호가 일치하지 않습니다.
+		    </div>
 			<fieldset>
 				<ul>
 					<li>

@@ -43,9 +43,13 @@ public class MemberService {
 		Member findMember = 
 				repository.findById(id)
 					.orElseThrow(() -> {
-						return new UserException("존재하지 않는 회원입니다.");
+						throw new UserException("존재하지 않는 회원입니다.");
 					});
 		return findMember;
+		/*return repository.findById(id)
+				.orElseThrow(() -> {
+					throw new UserException("존재하지 않는 회원입니다.");
+				});*/
 	}
 
 	//회원 삭제

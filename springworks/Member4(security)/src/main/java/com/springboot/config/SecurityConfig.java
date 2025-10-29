@@ -46,13 +46,13 @@ public class SecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/members/login")
-                .loginProcessingUrl("/perform_login") // 로그인 POST 액션 URL
+                .loginProcessingUrl("/login") // 로그인 POST 액션 URL
                 .defaultSuccessUrl("/", true)
                 .failureUrl("/members/login?error=true")
                 .permitAll()
             )
             .logout(logout -> logout
-            	.logoutRequestMatcher(new AntPathRequestMatcher("/perform_logout", "GET"))
+            	.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
                 .logoutSuccessUrl("/")
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")

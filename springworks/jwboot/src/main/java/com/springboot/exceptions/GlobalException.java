@@ -1,10 +1,11 @@
-package com.springboot.config;
+package com.springboot.exceptions;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-@ControllerAdvice
+//모든 컨트롤러에서 발생하는 예외를 일괄 처리함
+@ControllerAdvice  //전역 예외 처리
 public class GlobalException {
 
 	@ExceptionHandler
@@ -14,3 +15,4 @@ public class GlobalException {
 		return "exception/viewPage02";
 	}
 }
+

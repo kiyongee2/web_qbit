@@ -35,9 +35,9 @@ public class MemberController {
 	@PostMapping("/join")  //회원 가입 처리
 	public String join(@ModelAttribute MemberDTO dto,
 			RedirectAttributes ra) {
-		//리다이렉트시에 메시지 전달
 		try {
 			service.save(dto);
+			//리다이렉트시에 메시지 전달
 			ra.addFlashAttribute("msg", "회원가입 성공!");
 			return "redirect:/members/login";
 		}catch(Exception e) {

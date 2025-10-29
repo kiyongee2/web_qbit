@@ -188,7 +188,7 @@ public class BoardController {
 			return "board/detail";
 		}catch(Exception e) {
 			model.addAttribute("errorMsg", e.getMessage());
-			return "error/404.html";
+			return "error/errorPage";
 		}
 	}
 	

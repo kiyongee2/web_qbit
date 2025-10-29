@@ -5,13 +5,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.springboot.config.UserException;
+import com.springboot.exceptions.UserException;
 
 @Controller
 public class Exception04Controller {
 	
 	@GetMapping("/exception04")
 	public void method() {
-		throw new UserException("페이지를 찾을 수 없습니다.");
+		throw new UserException("UserException 메시지입니다.");
 	}
 }
+

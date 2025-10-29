@@ -16,6 +16,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.springboot.dto.BoardDTO;
 import com.springboot.entity.Board;
+import com.springboot.entity.Member;
+import com.springboot.exception.UserException;
 import com.springboot.repository.BoardRepository;
 
 import jakarta.transaction.Transactional;
@@ -84,9 +86,12 @@ public class BoardService {
 	
 	//글 상세 보기
 	public Board findById(Long id) {
-		return repository.findById(id)
-				.orElseThrow(() -> 
-			new IllegalArgumentException("해당 글이 존재하지 않습니다. ID=" + id));
+		Board findBoard = 
+				repository.findById(id)
+					.orElseThrow(() -> {
+						return new UserException("존재하지 않는 게시글입니다.");
+					});
+		return findBoard;
 	}
 	 
 	//글 목록(제목 검색 및 페이지 처리)
