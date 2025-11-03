@@ -24,6 +24,8 @@ public class SecurityConfig {
 			.authorizeHttpRequests(auth -> auth
 				//해당 경로만 허용
 				.requestMatchers("/", "/auth", "/home/**").permitAll() 
+				.requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
+				.requestMatchers("/admin/**").hasRole("ADMIN")
 				.anyRequest().authenticated() //나머지는 인증 필요
 			)
 			.formLogin(form -> form
@@ -64,3 +66,4 @@ public class SecurityConfig {
 		return new InMemoryUserDetailsManager(user, admin );
 	}
 }
+

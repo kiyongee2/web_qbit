@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
 <meta charset="UTF-8">
 <title>Welcome~</title>
@@ -35,14 +36,14 @@
 					</li>
 				</ul>
 			</fieldset>
-			<div class="btnInfo">
-				<th:block th:if="${member.email == session.loginEmail}">
+			<div sec:authorize="isAuthenticated()" class="btnInfo">
+				<th:block th:if="${#authentication.principal.name == member.name}">
 					<a th:href="@{/members/edit/{id}(id=${member.id})}">
 						<button>수정</button>
 					</a>
 					<a th:href="@{/members/delete/{id}(id=${member.id})}"
-					   onclick="return confirm('정말 삭제하시겠습니까?')">
-					   	<button>삭제</button>
+					   onclick="return confirm('정말 탈퇴하시겠습니까?')">
+					   	<button>탈퇴</button>
 				   </a>
 			   </th:block>
 				<a th:href="@{/members}"><button>목록</button></a>

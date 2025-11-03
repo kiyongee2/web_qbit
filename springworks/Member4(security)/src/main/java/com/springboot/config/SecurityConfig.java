@@ -5,32 +5,32 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import com.springboot.service.CustomUserDetailsService;
-
 import lombok.RequiredArgsConstructor;
 
 @Configuration
-@EnableMethodSecurity // 메소드 레벨 권한 사용시 필요
+@EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
 
     private final CustomUserDetailsService userDetailsService;
-
-    @Bean
+    
+    @Bean  //비밀번호 암호화
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
+    @Bean  //로그인 인증시 필요
     public DaoAuthenticationProvider authenticationProvider(PasswordEncoder encoder) {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
-        authProvider.setUserDetailsService(userDetailsService);
-        authProvider.setPasswordEncoder(encoder);
+        authProvider.setUserDetailsService(userDetailsService);  //계정 설정
+        authProvider.setPasswordEncoder(encoder); //비밀번호 설정
         return authProvider;
     }
 
@@ -48,7 +48,6 @@ public class SecurityConfig {
                 .loginPage("/members/login")
                 .loginProcessingUrl("/login") // 로그인 POST 액션 URL
                 .defaultSuccessUrl("/", true)
-                .failureUrl("/members/login?error=true")
                 .permitAll()
             )
             .logout(logout -> logout
@@ -56,12 +55,8 @@ public class SecurityConfig {
                 .logoutSuccessUrl("/")
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")
-            )
-            .exceptionHandling(ex -> ex
-                .accessDeniedPage("/access-denied")
-             )
-            .authenticationProvider(authenticationProvider(passwordEncoder()));
-        
+            );
+            
         return http.build();
     }
 }
