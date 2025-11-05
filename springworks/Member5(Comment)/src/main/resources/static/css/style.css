@@ -81,7 +81,7 @@ h2{
 .btnWrite button{padding: 8px 12px;}
 
 .writeForm, .boardDetail, .boardUpdate{
-	width: 500px;
+	width: 550px;
 	margin: 0 auto;
 }
 .writeForm ul, .boardDetail ul, 
@@ -95,16 +95,27 @@ h2{
 	margin: 0;
 }
 #commentWrite{
-	width: 500px;
+	width: 550px;
 	margin: 10px auto;
 }
 #commentWrite h4{padding-left: 10px; margin-bottom: 8px;}
 #commentWrite ul{padding-left: 0; margin: 8px;}
+#commentWrite textarea{
+	width: 440px;
+	resize: none;
+	margin: 0;
+}
+#commentList{
+	width: 550px;
+	margin: 0 auto;
+	font-size: 0.9rem;
+}
 .commentList{
-	width: 500px;
+	width: 550px;
 	margin: 20px auto;
 	border: 1px solid #ccc;
 	border-collapse: collapse;
+	text-align: center;
 }
 .commentList th, td{
 	border: 1px solid #ccc;

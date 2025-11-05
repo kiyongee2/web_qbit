@@ -21,9 +21,11 @@ public class CommentService {
 	private final CommentRepository commentRepo;
 	private final BoardRepository boardRepo;
 
+	//댓글 등록
 	public Long save(CommentDTO commentDTO) {
 		//부모 엔티티 조회
-		Optional<Board> optionalBoard = boardRepo.findById(commentDTO.getBoardId());
+		Optional<Board> optionalBoard =
+				boardRepo.findById(commentDTO.getBoardId());
 		if(optionalBoard.isPresent()) {
 			Board board = optionalBoard.get();
 			Comment comment = Comment.toSaveEntity(commentDTO, board);
@@ -33,9 +35,12 @@ public class CommentService {
 		}
 	}
 
+	//댓글 목록
 	public List<CommentDTO> findAll(Long boardId) {
 		//해당 ID로 검색한 게시글 가져오기
 		Board board = boardRepo.findById(boardId).get();
+		
+		//댓글을 가져와서 댓글번호로 내림차순 정렬하기
 		List<Comment> commentList = 
 				commentRepo.findAllByBoardOrderByIdDesc(board);
 		
@@ -48,6 +53,7 @@ public class CommentService {
 		
 		return commentDTOList;
 	}
-	
-	
 }
+
+
+

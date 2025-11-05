@@ -38,10 +38,10 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/", "/members/join", "/members/login", "/boards/pages",
+                .requestMatchers("/", "/members/join", "/members/login", "/boards/**",
                 		"/css/**", "/js/**", "/img/**").permitAll()
                 .requestMatchers("/admin/**").hasRole("ADMIN")
-                .requestMatchers("/members/**", "/comment/**").hasAnyRole("USER","ADMIN")
+                .requestMatchers("/members/**", "/comment/**", "/board/write").hasAnyRole("USER","ADMIN")
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form

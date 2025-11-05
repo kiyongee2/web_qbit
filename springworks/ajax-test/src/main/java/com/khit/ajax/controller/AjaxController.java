@@ -13,18 +13,6 @@ import com.khit.ajax.dto.AjaxDTO;
 @Controller
 public class AjaxController {
 	
-	@GetMapping("/ex01")
-	public String ex01() {
-		System.out.println("AjaxController.ex01");
-		return "index";
-	}
-	
-	@PostMapping("/ex02")
-	public @ResponseBody String ex02() {
-		System.out.println("AjaxController.ex02");
-		return "index";
-	}
-	
 	@GetMapping("/ex03")
 	public @ResponseBody String ex03(@RequestParam("param1") String param1,
 									 @RequestParam("param2") String param2) {

@@ -46,7 +46,8 @@ public class Comment {
 	@JoinColumn
 	private Board board;
 
-	public static Comment toSaveEntity(CommentDTO commentDTO, Board board) {
+	public static Comment toSaveEntity(CommentDTO commentDTO, 
+			Board board) {
 		Comment comment = new Comment();
 		comment.setCommentWriter(commentDTO.getCommentWriter());
 		comment.setCommentContent(commentDTO.getCommentContent());
@@ -54,8 +55,6 @@ public class Comment {
 		return comment;
 
 	}
-
-
-
-	
 }
+
+

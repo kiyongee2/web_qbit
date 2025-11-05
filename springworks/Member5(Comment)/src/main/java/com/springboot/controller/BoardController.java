@@ -190,13 +190,10 @@ public class BoardController {
 		try {
 			//조회수 증가
 			service.updateHits(id);
-			
 			//글 상세 보기
 			Board board = service.findById(id);
-			
 			//댓글 목록 가져오기
 			List<CommentDTO> commentDTOList = commentService.findAll(id);
-			
 			//모델 보내기
 			model.addAttribute("board", board);
 			model.addAttribute("page", pageable.getPageNumber());

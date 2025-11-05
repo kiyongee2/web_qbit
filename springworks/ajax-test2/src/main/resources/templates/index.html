@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ajax 메인..</title>
+<style>
+	a{
+		display: block;
+		margin: 10px;
+	}
+</style>
+</head>
+<body>
+	<h2>ajax 실습 예제</h2>
+	<div id="menu">
+	    <a th:href="@{/ajax/ex-01}">01_get 요청(parameter 전달하기)</a>
+		<a th:href="@{/ajax/ex-02}">02_post 요청(parameter DTO로 받기)</a>
+		<a th:href="@{/ajax/ex-03}">03_post 요청(@RequestBody-json)</a>
+	</div>
+</body>
+</html>
