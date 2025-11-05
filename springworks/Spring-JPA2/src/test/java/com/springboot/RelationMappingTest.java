@@ -1,6 +1,7 @@
 package com.springboot;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,33 +60,42 @@ public class RelationMappingTest {
 		}
 	}*/
 	
-	//게시글 조회
-	/*@Test
+	//특정 게시글을 작성한 회원 조회
+	//트랜잭션이 닫힌 후 Lazy 로딩이 되어 오류 발생함 - @Transactional 사용
+	@Transactional 
+	@Test
 	public void testSelect() {
-		Board board = boardRepo.findById(5).get();
+		Optional<Board> optionalBoard = boardRepo.findById(5);
+		log.info("[" + optionalBoard.get().getId() + "번 게시글 정보]");
 		
-		log.info("[ " + board.getId() + "번 게시글 정보 ]");
-		log.info("제목\t: " + board.getTitle());
-		log.info("글쓴이\t: " + board.getMember().getName());
-		log.info("내용\t: " + board.getContent());
-		log.info("권한\t: " + board.getMember().getRole());
-	}*/
+		if(optionalBoard.isPresent()) {
+			Board board = optionalBoard.get();
+			log.info("제목: " + board.getTitle());
+			log.info("내용: " + board.getContent());
+			log.info("글쓴이: " + board.getMember().getName());
+		}else {
+			log.info("해당 게시글을 찾을 수 없습니다.");
+		}
+	}
 	
-	//양방향 매핑 테스트 - 한명의 회원이 작성한 모든 게시글 조회
+	//한명의 회원이 작성한 모든 게시글 조회
 	@Transactional
 	@Test
 	public void testGetBoardList() {
-		//member1이 작성한 게시글 조회
-		Member member = memberRepo.findByMemberId("member1");
+		//member1 회원 가져오기
+		Member member = memberRepo.findByMemberId("member1").get();
 		
-		log.info(member.getName() + "이 작성한 게시글 목록");
+		log.info(member.getName() + "가(이) 작성한 게시글 목록");
 		
+		//member1이 작성한 모든 게시글 가져오기
 		List<Board> boardList = member.getBoards();
+		
 		for(Board board : boardList)
 			log.info(board.toString());
-		
 	}
 }
+
+
 
 
 

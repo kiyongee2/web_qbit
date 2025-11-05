@@ -46,6 +46,8 @@ public class SecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/members/login")
+                .usernameParameter("email")
+                .passwordParameter("passwd")
                 .loginProcessingUrl("/login") // 로그인 POST 액션 URL
                 .defaultSuccessUrl("/", true)
                 .permitAll()
@@ -55,7 +57,10 @@ public class SecurityConfig {
                 .logoutSuccessUrl("/")
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")
-            );
+            )
+            .exceptionHandling(ex -> ex
+                .accessDeniedPage("/access-denied")
+             );
             
         return http.build();
     }

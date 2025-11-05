@@ -16,7 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@ToString
+@ToString(exclude = "member") //순환 참조 오류 방지
 @Setter
 @Getter
 @Entity
@@ -34,9 +34,7 @@ public class Board {
 	@CreationTimestamp //시간 자동 저장
 	private Timestamp createdDate; //작성일
 	
-	//다대일 연관 관계 매핑
-	//fetch 전략 - 게시글 목록을 볼때마다 member 전체를 매번 로딩하지 않음
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "member_id")
+	@JoinColumn()  //조인 - 참조 관계
 	private Member member;
 }

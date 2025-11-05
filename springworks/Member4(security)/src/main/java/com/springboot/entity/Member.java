@@ -51,7 +51,8 @@ public class Member {
 	private List<Board> boards = new ArrayList<>();
 	
 	//DTO를 Entity로 변환하는 메서드
-	public static Member toSaveEntity(MemberDTO dto, PasswordEncoder encoder) {
+	public static Member toSaveEntity(MemberDTO dto, 
+			PasswordEncoder encoder) {
 		Member member = new Member();
 		member.setEmail(dto.getEmail());
 		member.setPasswd(encoder.encode(dto.getPasswd()));

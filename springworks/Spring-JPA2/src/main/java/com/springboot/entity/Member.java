@@ -14,7 +14,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@ToString(exclude="boards")
+@ToString(exclude = "boards") //순환 참조 오류 방지
 @Setter
 @Getter
 @Entity
@@ -23,7 +23,7 @@ public class Member {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private Integer id;  //번호
 	
-	@Column(name = "member_id", unique = true)
+	@Column(unique = true)
 	private String memberId; //회원 아이디
 	
 	@Column(nullable = false)
@@ -34,10 +34,11 @@ public class Member {
 	
 	private String role;   //권한(USER, ADMIN)
 	
-	//양방향 매핑
+	// Member(일) : Board(다)와 연관 매핑 :
 	@OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
 	private List<Board> boards = new ArrayList<>();
 }
+
 
 
 

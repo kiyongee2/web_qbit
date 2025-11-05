@@ -12,13 +12,7 @@ public class Exception03Controller {
 	
 	@GetMapping("/exception03")
 	public void method() {
-		throw new UserException("페이지를 찾을 수 없습니다.");
-	}
-	
-	@ExceptionHandler(UserException.class)  //로컬 예외 처리(개별적인 예외)
-	public String handleException(UserException ex, Model model) {
-		model.addAttribute("data1", ex.getMessage());
-		model.addAttribute("data2", ex);
-		return "exception/viewPage01";
+		throw new UserException("UserException 메시지입니다.");
 	}
 }
+
