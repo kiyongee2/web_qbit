@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>회원 목록</title>
+	<link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css}" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+	<div th:replace="~{/layout/header::header-fragment}"></div>
+	<section class="container bg-light py-4 mt-3 rounded shadow-sm">
+	  <div class="container pb-4">
+	    <h1 class="display-6 fw-bold">회원 목록</h1>
+	  </div>
+		<table class="table table-hover">
+			<thead>
+				<tr class="text-center">
+					<th>번호</th>
+					<th>이메일</th>
+					<th>이름</th>
+					<th>성별</th>
+					<th>권한</th>
+					<th>가입일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="m: ${memberList}" class="text-center">
+					<td th:text="${m.id}"></td>
+					<td>
+						<a th:href="@{/members/{id}(id=${m.id})}" th:text="${m.email}"></a>
+					</td>
+					<td th:text="${m.name}"></td>
+					<td th:text="${m.gender}"></td>
+					<td th:text="${m.role}"></td>
+					<td th:text="${#dates.format(m.joinDate, 'yyyy-MM-dd HH:mm')}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</body>
+</html>

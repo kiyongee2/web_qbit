@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <meta charset="UTF-8">
+    <title>게시글 상세보기</title>
+
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css}" 
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+ <div th:replace="~{/layout/header::header-fragment}"></div>
+
+ <section class="container py-5">
+    <div class="mb-4 border-bottom pb-3 d-flex justify-content-between align-items-center">
+        <h2 class="fw-bold text-primary">게시글 상세 보기</h2>
+        <a th:href="@{/boards/pages(page=${page})}" class="btn btn-outline-secondary">
+            <i class="bi bi-list-ul"></i> 목록
+        </a>
+    </div>
+
+    <!-- 게시글 본문 -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h4 class="card-title mb-3" th:text="${board.title}"></h4>
+            <p class="text-muted mb-2">
+                <small th:text="'글쓴이: ' + ${board.writer}"></small> |
+                <small th:text="'작성일: ' + ${#dates.format(board.regDate, 'yyyy-MM-dd HH:mm')}"></small> |
+                <small th:text="'조회수: ' + ${board.hits}"></small>
+            </p>
+            <hr>
+            <p class="card-text" style="white-space: pre-wrap;" th:text="${board.content}"></p>
+
+            <!-- 첨부파일 -->
+            <div th:if="${board.originalFilename}" class="mt-3">
+                <strong>첨부파일:</strong>
+                <a th:href="@{/boards/download/{id}(id=${board.id})}" 
+                   th:text="${board.originalFilename}"></a>
+                <div th:if="${#strings.endsWith(board.originalFilename, '.jpg') 
+                            or #strings.endsWith(board.originalFilename, '.jpeg') 
+                            or #strings.endsWith(board.originalFilename, '.png')}"
+                     class="mt-3">
+                    <img th:src="@{'/images/' + ${board.storedFilename}}" 
+                         class="img-thumbnail" style="max-width: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 수정/삭제 버튼 -->
+    <div sec:authorize="isAuthenticated()" class="mb-4">
+        <th:block th:if="${#authentication.principal.name == board.writer}">
+            <a th:href="@{|/boards/update/${board.id}|}" class="btn btn-warning me-2">
+                <i class="bi bi-pencil-square"></i> 수정
+            </a>
+            <a th:href="@{|/boards/delete/${board.id}|}" 
+               onclick="return confirm('정말 삭제하시겠습니까?')" 
+               class="btn btn-danger">
+                <i class="bi bi-trash"></i> 삭제
+            </a>
+        </th:block>
+    </div>
+
+    <!-- 댓글 작성 -->
+    <div id="commentWrite" class="mb-5">
+        <h4 class="fw-bold mb-3">댓글</h4>
+        <div sec:authorize="isAuthenticated()">
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <input type="hidden" id="commentWriter" th:value="${#authentication.principal.name}">
+                    <div class="mb-3">
+                        <textarea id="commentContent" class="form-control" rows="3" placeholder="댓글을 입력하세요"></textarea>
+                    </div>
+                    <button id="commentWriteBtn" class="btn btn-primary" onclick="commentWrite()">
+                        <i class="bi bi-chat-dots"></i> 댓글 등록
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div sec:authorize="!isAuthenticated()">
+            <p class="text-muted">댓글을 작성하려면 <a th:href="@{/members/login}">로그인</a> 하세요.</p>
+        </div>
+    </div>
+
+    <!-- 댓글 목록 -->
+    <div id="commentList">
+        <table class="table table-hover align-middle bg-white shadow-sm">
+            <thead class="table-primary">
+                <tr>
+                    <th>번호</th>
+                    <th>작성자</th>
+                    <th>내용</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="com : ${commentList}">
+                    <td th:text="${com.id}"></td>
+                    <td th:text="${com.commentWriter}"></td>
+                    <td th:text="${com.commentContent}"></td>
+                    <td th:text="${#dates.format(com.commentDate, 'yyyy-MM-dd HH:mm')}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- jQuery + CSRF + 댓글 등록 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script th:inline="javascript">
+    const token = $("meta[name='_csrf']").attr("content");
+    const header = $("meta[name='_csrf_header']").attr("content");
+
+    $(document).ajaxSend(function(e, xhr, options) {
+        xhr.setRequestHeader(header, token);
+    });
+
+    const commentWrite = () => {
+        const writer = $("#commentWriter").val();
+        const content = $("#commentContent").val();
+        const id = [[${board.id}]];
+
+        if (!content.trim()) {
+            alert("댓글 내용을 입력하세요.");
+            return;
+        }
+
+        $.ajax({
+            type: "post",
+            url: "/comment/save",
+            data: {
+                commentWriter: writer,
+                commentContent: content,
+                boardId: id
+            },
+            success: function(res) {
+                let output = `
+                    <table class="table table-hover align-middle bg-white shadow-sm">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>번호</th>
+                                <th>작성자</th>
+                                <th>내용</th>
+                                <th>작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+                for (let i in res) {
+                    output += `
+                        <tr>
+                            <td>${res[i].id}</td>
+                            <td>${res[i].commentWriter}</td>
+                            <td>${res[i].commentContent}</td>
+                            <td>${res[i].commentDate}</td>
+                        </tr>`;
+                }
+                output += `</tbody></table>`;
+                $("#commentList").html(output);
+                $("#commentContent").val("");
+            },
+            error: function(err) {
+                console.log("댓글 등록 실패", err);
+            }
+        });
+    }
+</script>
+</body>
+</html>
