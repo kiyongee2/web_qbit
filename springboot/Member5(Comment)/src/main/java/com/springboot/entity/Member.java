@@ -59,7 +59,7 @@ public class Member {
 		member.setPasswd(encoder.encode(dto.getPasswd()));
 		member.setName(dto.getName());
 		member.setGender(dto.getGender());
-		member.setRole("ROLE_USER");
+		member.setRole("ROLE_ADMIN");
 		
 		return member;
 	}

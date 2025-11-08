@@ -1,0 +1,46 @@
+package com.springboot.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.springboot.entity.Book;
+import com.springboot.repository.BookRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class BookService {
+	
+	private final BookRepository bookRepo;
+
+	//도서 등록
+	public void save(Book book) {
+		bookRepo.save(book);
+	}
+
+	//도서 목록
+	public List<Book> findAll() {
+		return bookRepo.findAll();
+	}
+
+	//도서 정보
+	public Book findById(Long id) {
+		Optional<Book> book = bookRepo.findById(id);
+		return book.get();
+	}
+
+	//도서 삭제
+	public void delete(Long id) {
+		bookRepo.deleteById(id);
+	}
+
+	//도서 수정
+	public void update(Book book) {
+		bookRepo.save(book);
+	}
+	
+	
+}
