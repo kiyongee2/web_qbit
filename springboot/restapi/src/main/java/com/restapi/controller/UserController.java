@@ -26,16 +26,16 @@ public class UserController {
 	private final UserService service;
 	
 	//회원 가입
-	@PostMapping("/save")
+	//@RequestBody - json 데이터 요청
+	@PostMapping
 	public String saveUser(@RequestBody User user) {
 		service.save(user);
-		
 		return "회원 가입 성공!";
 	}
 	
 	//회원 목록
 	@GetMapping
-	public List<User> getUserList() {
+	public List<User> getAllUsers(){
 		List<User> userList = service.findAll();
 		return userList;
 	}
@@ -47,21 +47,23 @@ public class UserController {
 		return user;
 	}
 	
-	//회원 수정
-	@PutMapping("/save")
-	public String updateUser(@RequestBody User user) {
-		service.update(user);
-		
-		return "회원 수정 완료!";
-	}
-	
 	//회원 삭제
 	@DeleteMapping("/{id}")
 	public String deleteUser(@PathVariable Integer id) {
 		service.delete(id);
 		return "회원 삭제 완료!";
 	}
+	
+	//회원 수정
+	@PutMapping("/{id}")
+	public String updateUser(@PathVariable Integer id,
+			@RequestBody User user) {
+		service.update(id, user);
+		return "회원 수정 완료!";
+	}
 }
+
+
 
 
 

@@ -17,20 +17,23 @@ import lombok.Data;
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer id;  //번호
 	
 	@Column(unique=true)
-	private String username;
+	private String username; //아이디
 	
 	@Column(nullable=false)
-	private String password;
+	private String password; //비밀번호
 	
 	@Column(nullable=false)
-	private String email;
+	private String email;  //이메일
 	
 	@CreationTimestamp
+	@Column(updatable=false)
 	private Timestamp regDate; //가입일
 	
 	@UpdateTimestamp
+	@Column(insertable=false)
 	private Timestamp updateDate; //수정일
 }
+

@@ -17,8 +17,8 @@ public class BookService {
 	private final BookRepository bookRepo;
 
 	//도서 등록
-	public void save(Book book) {
-		bookRepo.save(book);
+	public Book save(Book book) {
+		return bookRepo.save(book);
 	}
 
 	//도서 목록
@@ -28,8 +28,10 @@ public class BookService {
 
 	//도서 정보
 	public Book findById(Long id) {
-		Optional<Book> book = bookRepo.findById(id);
-		return book.get();
+		//Optional<Book> book = bookRepo.findById(id);
+		//return book.get();
+		return bookRepo.findById(id)
+				.orElseThrow(() -> new RuntimeException("도서를 찾을 수 없습니다."));
 	}
 
 	//도서 삭제
@@ -38,8 +40,11 @@ public class BookService {
 	}
 
 	//도서 수정
-	public void update(Book book) {
-		bookRepo.save(book);
+	public Book update(Long id, Book updatedBook) {
+		Book book = findById(id);
+		book.setTitle(updatedBook.getTitle());
+		book.setAuthor(updatedBook.getAuthor());
+		return bookRepo.save(book);
 	}
 	
 	

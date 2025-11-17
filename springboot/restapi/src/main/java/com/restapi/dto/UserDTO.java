@@ -7,8 +7,10 @@ import lombok.Data;
 @Data
 public class UserDTO {
 
-	private Integer id;
-	private String username;
-	private String password;
-	private String email;
+	private Integer id;  //번호
+	private String username; //아이디
+	private String password; //비빌번호
+	private String email;    //이메일
+	
+	
 }

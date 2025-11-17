@@ -13,13 +13,6 @@ import com.restapi.dto.UserDTO;
 
 @RestController
 public class RestAPIController {
-	
-	//문자열 전송
-	@GetMapping("/space")
-	public String restGet() {
-		return "<h1>회원 전용 페이지</h1>";
-	}
-
 	//회원 조회
 	@GetMapping("/space")
 	public UserDTO httpGet() {
