@@ -3,6 +3,10 @@ package com.springboot.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.springboot.entity.Book;
@@ -25,6 +29,43 @@ public class BookService {
 	public List<Book> findAll() {
 		return bookRepo.findAll();
 	}
+	
+	//도서 목록 페이지
+	public Page<Book> findAllPage(Pageable pageable) {
+		int page = pageable.getPageNumber() - 1; // Page 번호 보정
+	    int pageSize = 5; // 한 페이지당 10개 출력
+
+	    pageable = PageRequest.of(page, pageSize, Sort.by(Sort.Direction.DESC, "id"));
+
+	    return bookRepo.findAll(pageable);
+	}
+	
+	////도서 목록 검색 및 페이지
+	public Page<Book> findAllPage(Pageable pageable, String keyword, String type) {
+		int page = pageable.getPageNumber();
+	    int pageSize = 5;
+
+	    pageable = PageRequest.of(page, pageSize, Sort.by(Sort.Direction.DESC, "id"));
+
+	    // 검색어 없으면 전체 조회
+	    if (keyword == null || keyword.trim().isEmpty()) {
+	        return bookRepo.findAll(pageable);
+	    }
+
+	    keyword = keyword.trim();
+
+	    switch (type) {
+	        case "title":
+	            return bookRepo.findByTitleContaining(keyword, pageable);
+
+	        case "author":
+	            return bookRepo.findByAuthorContaining(keyword, pageable);
+
+	        default:  // all
+	            return bookRepo.findByTitleContainingOrAuthorContaining(
+	                    keyword, keyword, pageable);
+	    }
+	}
 
 	//도서 정보
 	public Book findById(Long id) {
@@ -46,6 +87,7 @@ public class BookService {
 		book.setAuthor(updatedBook.getAuthor());
 		return bookRepo.save(book);
 	}
+
 	
-	
+
 }
